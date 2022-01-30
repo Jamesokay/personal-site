@@ -8,11 +8,11 @@ const IndexPage = () => {
     <Layout>
       <div className={container}>
         <div className={textContainer}>
-        <span className={quote}>"Art is the elimination of the unnecessary."</span>
-        <span className={citation}>— Pablo Picasso</span>
+          <span className={quote}>"Art is the elimination of the unnecessary."</span>
+          <span className={citation}>— Pablo Picasso</span>
         </div>
         <div className={imageContainer}>
-        <StaticImage alt="Me" src="../images/picasso.jpeg" />
+          <StaticImage alt="Me" src="../images/picasso.jpeg" />
         </div>
       </div>
     </Layout>

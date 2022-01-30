@@ -13,11 +13,6 @@ html, body {
     overscroll-behavior: none;
 }
 
-p {
-    margin: 16px auto;
-    line-height: 1.5em;
-}
-
 nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
