@@ -7,16 +7,19 @@
 }
 
 .textContainer {
-    width: 50%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .imageContainer {
-    width: 40%;
+    width: 50%;
 }
 
 .quote {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 5vw;
     display: inline-block;
     margin-bottom: 0.5rem;
 }
@@ -24,7 +27,7 @@
 .citation {
     color: grey;
     display: inline-block;
-    margin-bottom: 1.25rem;
+    font-size: 2.5vw;
 }
 
 .bodyText {

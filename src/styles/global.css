@@ -5,15 +5,12 @@
     padding: 0;
     text-decoration: none;
     font-family: 'Montserrat';
-    color: black;
+    color: #2e242c;
 }
 
 html, body {
     min-height: 100%;
-}
-
-body {
-    background: rgba(255, 255, 255, 0.733)
+    overscroll-behavior: none;
 }
 
 p {
@@ -48,5 +45,5 @@ nav a {
 }
 
 nav a:hover {
-    color: black;
+    color: #2e242c;;
 }
