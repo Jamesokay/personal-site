@@ -1,9 +1,9 @@
 import * as React from "react"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 
 const ContactPage = () => {
   return (
-    <Layout pageTitle="Contact">
+    <Layout>
       <p>Here is my contact information.</p>
     </Layout>
   )

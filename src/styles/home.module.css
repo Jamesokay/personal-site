@@ -1,0 +1,32 @@
+.container {
+    width: 80%;
+    margin: auto;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.textContainer {
+    width: 50%;
+}
+
+.imageContainer {
+    width: 40%;
+}
+
+.quote {
+    font-weight: 700;
+    font-size: 2rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.citation {
+    color: grey;
+    display: inline-block;
+    margin-bottom: 1.25rem;
+}
+
+.bodyText {
+    display: inline-block;
+}
