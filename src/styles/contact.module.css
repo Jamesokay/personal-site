@@ -3,4 +3,15 @@
     margin: auto;
     padding-top: 2rem;
     display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-details {
+    list-style: none;
+    font-size: 1.25rem;
+}
+
+.contact-details-item {
+    margin-bottom: 1rem;
 }

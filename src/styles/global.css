@@ -42,3 +42,19 @@ nav a {
 nav a:hover {
     color: #2e242c;;
 }
+
+.footer {
+    width: 80%;
+    height: 20px;
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+    border-top: 1px solid rgb(206, 204, 204);
+    display: flex;
+    justify-content: center;
+}
+
+.footerContent {
+    font-size: 0.75rem;
+    color: rgb(206, 204, 204);
+}

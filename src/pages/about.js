@@ -7,11 +7,11 @@ const AboutPage = () => {
     <Layout>
       <div className={container}>
         <span>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          I am a full-stack developer passionate about creating web applications 
+          that are both functional and elegant. I believe that software development 
+          is an art, one in which ambitious ideas are realised through the medium of 
+          well-written code. My goal is to work with other like-minded developers, 
+          and to continue honing my abilities within a collaborative environment.
         </span>
       </div>
     </Layout>

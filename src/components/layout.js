@@ -6,10 +6,11 @@ export default function Layout({ children }) {
   return (
     <div>
       <Navbar />
-      <main>
-        {children}
-      </main>
+      {children}
+      <div className='footer'>
+        <span className='footerContent'>Here is some trial text for my footer</span>
+      </div>
+    
     </div>
   )
 }
-
