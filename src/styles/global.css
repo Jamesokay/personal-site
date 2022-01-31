@@ -31,19 +31,11 @@ html, body {
 }
 
 nav {
-    height: 5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     padding: 1rem;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    white-space: nowrap;
     border-bottom: 1px solid coral
-}
-
-.navTitle {
-    letter-spacing: 0.25rem;
-    font-size: 1.5rem;
-    color: white;
 }
 
 .navLinks {
@@ -55,12 +47,20 @@ nav a {
     display: inline-block;
     margin-left: 20px;
     font-weight: 400;
-    color: white;
+    color: rgb(211, 211, 211);
     transition: color 0.3s ease-in-out;
 }
 
 nav a:hover {
-    color: coral;;
+    color: white;
+}
+
+.active {
+    color: coral;
+}
+
+.active:hover {
+    color: coral !important;
 }
 
 .footer {

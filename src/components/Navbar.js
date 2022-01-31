@@ -4,12 +4,11 @@ import { Link } from 'gatsby'
 export default function Navbar() {
     return (
         <nav>
-          <span className='navTitle'>James O'Keeffe</span>
           <div className='navLinks'>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/portfolio">Portfolio</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/" activeClassName="active">Home</Link>
+            <Link to="/about" activeClassName="active">About</Link>
+            <Link to="/portfolio" activeClassName="active">Portfolio</Link>
+            <Link to="/contact" activeClassName="active">Contact</Link>
           </div>          
         </nav>
     )
