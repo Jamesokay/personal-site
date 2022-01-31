@@ -7,9 +7,7 @@ export default function Layout({ children }) {
     <div className='pageContainer'>
       <div className='page'>
         <Navbar />
-        <div>
         {children}
-        </div> 
       </div>
     </div>
   )

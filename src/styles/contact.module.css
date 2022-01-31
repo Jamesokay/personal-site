@@ -1,17 +1,17 @@
 .container {
-    width: 80%;
-    margin: auto;
+    height: 100%;
+    width: 100%;
     padding-top: 2rem;
     display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
 }
 
 .contact-details {
     list-style: none;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 .contact-details-item {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
