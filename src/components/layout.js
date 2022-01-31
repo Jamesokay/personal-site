@@ -4,13 +4,13 @@ import '../styles/global.css';
 
 export default function Layout({ children }) {
   return (
-    <div>
-      <Navbar />
-      {children}
-      <div className='footer'>
-        <span className='footerContent'>Here is some trial text for my footer</span>
+    <div className='pageContainer'>
+      <div className='page'>
+        <Navbar />
+        <div>
+        {children}
+        </div> 
       </div>
-    
     </div>
   )
 }
