@@ -7,10 +7,9 @@ const IndexPage = () => {
     <Layout>
       <div className={container}>
         <div className={textContainer}>
-          <span className={quote}>"Art is the 
-          <span className={wordPop}> elimination </span> 
-          of the unnecessary."</span>
-          <span className={citation}>— Pablo Picasso</span>
+          <span className={quote}>ART IS THE <span className={wordPop}> ELIMINATION </span> OF THE UNNECESSARY</span>
+          <br/>
+          <span className={citation}>— PABLO PICASSO</span>
         </div>
       </div>
     </Layout>

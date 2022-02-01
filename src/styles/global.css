@@ -15,6 +15,7 @@ html, body {
 
 .pageContainer {
     height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +26,7 @@ html, body {
 .page {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 94.5%;
     height: 90%;
     background: #2e242c;
 }
@@ -38,14 +39,8 @@ nav {
     border-bottom: 1px solid coral
 }
 
-.navLinks {
-    display: inline-block;
-    text-align: right;
-}
-
 nav a {
-    display: inline-block;
-    margin-left: 20px;
+    margin-right: 1rem;
     font-weight: 400;
     color: rgb(211, 211, 211);
     transition: color 0.3s ease-in-out;
@@ -61,20 +56,4 @@ nav a:hover {
 
 .active:hover {
     color: coral !important;
-}
-
-.footer {
-    width: 80%;
-    height: 20px;
-    position: absolute;
-    left: 10%;
-    bottom: 0;
-    border-top: 1px solid rgb(206, 204, 204);
-    display: flex;
-    justify-content: center;
-}
-
-.footerContent {
-    font-size: 0.75rem;
-    color: rgb(206, 204, 204);
 }
