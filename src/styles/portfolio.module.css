@@ -1,7 +1,44 @@
 .container {
     box-sizing: border-box;
+    padding-top: 3rem;
     height: 100%;
     width: 100%;
-    padding: 2rem;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-weight: 300;
+    font-size: 4vw;
+    letter-spacing: 0.5rem;
+    color: coral;
+}
+
+.titleSub {
+    font-weight: 300;
+    font-size: 2vw;
+    letter-spacing: 0.25rem;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.video {
+    width: 800px;
+    height: 500px;
+    margin-bottom: 3rem;
+}
+
+.quote {
+    color: coral;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    line-height: 2.5rem;
+    font-style: italic;
+}
+
+.text {
+    width: 800px;
+    line-height: 1.5rem;
 }

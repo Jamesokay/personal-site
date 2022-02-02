@@ -13,30 +13,17 @@ html, body {
     overscroll-behavior: none;
 }
 
-.pageContainer {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: coral;
-
-}
-
 .page {
-    display: flex;
-    flex-direction: column;
-    width: 94.5%;
-    height: 90%;
-    background: #2e242c;
-}
+    min-height: 100vh;
+    background: linear-gradient(#283a3f, black) no-repeat;
+    background-attachment: fixed;
+} 
 
 nav {
     padding: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
-    border-bottom: 1px solid coral
 }
 
 nav a {
