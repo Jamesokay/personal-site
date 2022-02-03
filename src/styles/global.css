@@ -16,7 +16,7 @@ html, body {
 .page {
     min-height: 100vh;
     min-width: 100vw;
-    background: linear-gradient(#2f6133, black) no-repeat;
+    background: linear-gradient(#e2f5ff, #455a64) no-repeat;
     background-attachment: fixed;
 } 
 
@@ -27,14 +27,12 @@ nav {
     align-items: center;
     position: fixed;
     width: 99%;
-    background: #2f6133;
-    border-bottom: 1px solid pink;
 }
 
 nav a {
     margin-right: 1rem;
     font-weight: 400;
-    color: rgb(211, 211, 211);
+    color: grey;
     transition: color 0.3s ease-in-out;
 }
 
@@ -43,9 +41,9 @@ nav a:hover {
 }
 
 .active {
-    color: coral;
+    color: #211a23;
 }
 
 .active:hover {
-    color: coral !important;
+    color: #211a23 !important;
 }

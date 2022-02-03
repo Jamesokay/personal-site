@@ -1,13 +1,15 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import { container, title, titleSub, video, quote, text } from '../styles/portfolio.module.css'
+import { container, titleContainer, title, titleSub, video, quote, text } from '../styles/portfolio.module.css'
 
 export default function portfolio() {
     return (
         <Layout>
+          <div className={titleContainer}>
+            <span className={title}>Spotify Clone</span>
+            <span className={titleSub}>Built using React</span>
+          </div>
           <div className={container}>
-          <span className={title}>Spotify Clone</span>
-          <span className={titleSub}>Built using React</span>
            <iframe
             className={video}
             src="https://www.youtube.com/embed/v1YyBj7rhF0"
@@ -21,25 +23,12 @@ export default function portfolio() {
           
           
           <div className={text}>
-          <p className={quote}>"Here is an eye-grabbing and relevant quote"</p>
+          <p className={quote}>Look at this eye-grabbing and relevant bit of text</p>
           <br />
-          <p>Here is some text describing the development process Here is some text describing the development process 
-          Here is some text describing the development process Here is some text describing the development process 
-          Here is some text describing the development process Here is some text describing the development process 
-          Here is some text describing the development process Here is some text describing the development process 
-          Here is some text describing the development process Here is some text describing the development process 
-          Here is some text describing the development process Here is some text describing the development process 
-          Here is some text describing the development process Here is some text describing the development process 
-          Here is some text describing the development process Here is some text describing the development process 
-          Here is some text describing the development process Here is some text describing the development process
-          Here is some text describing the development process Here is some text describing the development process 
-          Here is some text describing the development process Here is some text describing the development process 
-          Here is some text describing the development process Here is some text describing the development process 
-          Here is some text describing the development process Here is some text describing the development process
-          Here is some text describing the development process Here is some text describing the development process 
-          Here is some text describing the development process Here is some text describing the development process 
-          Here is some text describing the development process Here is some text describing the development process 
-          Here is some text describing the development process Here is some text describing the development process</p>
+          <p>Here is some text describing the development process, 
+            not in too much detail though as I'm going to save the more in-depth account (potentially) for lower down
+            on the page. For the time being, all I really need is a bit of body text to, I suppose, 'complete' the composition.
+          </p>
           </div>
           </div>
         </Layout>

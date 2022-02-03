@@ -1,44 +1,55 @@
 .container {
     box-sizing: border-box;
-    padding-top: max(5vw, 4rem);
+    margin: auto;
     height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+
+}
+
+.titleContainer {
     width: 100%;
+    padding-top: max(9vw, 4rem);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 .title {
     font-weight: 900;
-    font-size: 6vw;
+    font-size: 8vw;
     letter-spacing: -0.5vw;
-    color: pink;
+    color: #211a23;
 }
 
 .titleSub {
     font-weight: 300;
-    font-size: 2vw;
-    letter-spacing: 0.25vw;
+    font-size: 3vw;
+    letter-spacing: 0.5vw;
     margin-bottom: 3rem;
     color: white;
 }
 
 .video {
-    width: 55vw;
-    height: 35vw;
+    width: 50%;
+    height: 415px;
     margin-bottom: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 60px #211a23;
 }
 
 .quote {
-    color: pink;
+    color: #211a23;
+    font-weight: 300;
     font-size: 2.5vw;
-    margin-bottom: 1vw;
     line-height: 2.5vw;
-    font-style: italic;
 }
 
 .text {
-    width: 55vw;
-    line-height: 1.5rem;
+    width: 40%;
+    line-height: 2rem;
+    font-size: 1.25rem;
+    font-weight: 300;
 }
