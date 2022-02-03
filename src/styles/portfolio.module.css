@@ -1,6 +1,6 @@
 .container {
     box-sizing: border-box;
-    padding-top: 3rem;
+    padding-top: max(5vw, 4rem);
     height: 100%;
     width: 100%;
     display: flex;
@@ -10,35 +10,35 @@
 }
 
 .title {
-    font-weight: 300;
-    font-size: 4vw;
-    letter-spacing: 0.5rem;
-    color: coral;
+    font-weight: 900;
+    font-size: 6vw;
+    letter-spacing: -0.5vw;
+    color: pink;
 }
 
 .titleSub {
     font-weight: 300;
     font-size: 2vw;
-    letter-spacing: 0.25rem;
+    letter-spacing: 0.25vw;
     margin-bottom: 3rem;
     color: white;
 }
 
 .video {
-    width: 800px;
-    height: 500px;
+    width: 55vw;
+    height: 35vw;
     margin-bottom: 3rem;
 }
 
 .quote {
-    color: coral;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    line-height: 2.5rem;
+    color: pink;
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+    line-height: 2.5vw;
     font-style: italic;
 }
 
 .text {
-    width: 800px;
+    width: 55vw;
     line-height: 1.5rem;
 }

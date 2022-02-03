@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap');
 
 * {
     margin: 0;
@@ -15,7 +15,8 @@ html, body {
 
 .page {
     min-height: 100vh;
-    background: linear-gradient(#283a3f, black) no-repeat;
+    min-width: 100vw;
+    background: linear-gradient(#2f6133, black) no-repeat;
     background-attachment: fixed;
 } 
 
@@ -24,6 +25,10 @@ nav {
     display: flex;
     justify-content: right;
     align-items: center;
+    position: fixed;
+    width: 99%;
+    background: #2f6133;
+    border-bottom: 1px solid pink;
 }
 
 nav a {
