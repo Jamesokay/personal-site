@@ -6,7 +6,7 @@ export default function portfolio() {
     return (
         <Layout>
           <div className={titleContainer}>
-            <span className={title}>Spotify Clone</span>
+            <h1 className={title}>Spotify Clone</h1>
             <span className={titleSub}>Built using React</span>
           </div>
           <div className={container}>

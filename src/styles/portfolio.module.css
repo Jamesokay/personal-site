@@ -2,39 +2,49 @@
     box-sizing: border-box;
     margin: auto;
     height: 100%;
-    width: 90%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding: 2rem;
+    justify-content: space-around;
+}
 
+@media screen and (max-width: 768px) {
+    .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .text {
+      width: 80%;
+      text-align: center;
+  }
 }
 
 .titleContainer {
     width: 100%;
     padding-top: max(9vw, 4rem);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding-bottom: max(5vw, 2rem);
+    text-align: center;
 }
 
 .title {
     font-weight: 900;
-    font-size: 8vw;
+    font-size: calc(3rem + 4vw);
     letter-spacing: -0.5vw;
     color: #211a23;
 }
 
 .titleSub {
     font-weight: 300;
-    font-size: 3vw;
+    font-size: calc(1.5rem + 2vw);
     letter-spacing: 0.5vw;
     margin-bottom: 3rem;
-    color: white;
+    color: #485063;
 }
 
 .video {
-    width: 50%;
-    height: 415px;
+    width: 45vw;
+    height: 28vw;
+    min-width: 320px;
+    min-height: 198px;
     margin-bottom: 3rem;
     border-radius: 0.5rem;
     box-shadow: 0 4px 60px #211a23;
@@ -43,12 +53,13 @@
 .quote {
     color: #211a23;
     font-weight: 300;
-    font-size: 2.5vw;
-    line-height: 2.5vw;
+    font-size: calc(1.25rem + 0.5vw);
+    line-height: calc(1.5rem + 0.5vw);
 }
 
 .text {
     width: 40%;
+    min-width: 320px;
     line-height: 2rem;
     font-size: 1.25rem;
     font-weight: 300;
