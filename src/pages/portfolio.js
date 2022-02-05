@@ -1,15 +1,20 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import { container, titleContainer, title, titleSub, video, quote, text } from '../styles/portfolio.module.css'
+import { container, topPanel, titleContainer, title, titleSub, videoContainer, video, quote, text, features, featureBox, featureImage, featureTextBox, featureText } from '../styles/portfolio.module.css'
 
 export default function portfolio() {
     return (
         <Layout>
+         
           <div className={titleContainer}>
             <h1 className={title}>Spotify Clone</h1>
             <span className={titleSub}>Built using React</span>
           </div>
           <div className={container}>
+
+
+        <div className={topPanel}>
+          <div className={videoContainer}>
            <iframe
             className={video}
             src="https://www.youtube.com/embed/v1YyBj7rhF0"
@@ -20,6 +25,8 @@ export default function portfolio() {
             mozallowfullscreen="true"
             allowFullScreen
            />
+          </div>
+          
           
           
           <div className={text}>
@@ -30,6 +37,56 @@ export default function portfolio() {
             on the page. For the time being, all I really need is a bit of body text to, I suppose, 'complete' the composition.
           </p>
           </div>
+        </div>
+          
+          <div className={features}>
+            <div className={featureBox}>
+              <div className={featureImage} />
+              <div className={featureTextBox}> 
+              <span className={featureText}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+              deserunt mollit anim id est laborum.
+              </span>
+              
+              </div>
+            </div>
+
+            <div className={featureBox}>
+              <div className={featureImage} />
+              <div className={featureTextBox}> 
+              <span className={featureText}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+              deserunt mollit anim id est laborum.
+              </span>
+              
+              </div>
+            </div>
+
+            <div className={featureBox}>
+              <div className={featureImage} />
+              <div className={featureTextBox}> 
+              <span className={featureText}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+              deserunt mollit anim id est laborum.
+              </span>
+              
+              </div>
+            </div>
+
+          </div>
+
           </div>
         </Layout>
     )

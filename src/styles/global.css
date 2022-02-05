@@ -28,6 +28,8 @@ nav {
     align-items: center;
     position: fixed;
     width: 99%;
+    background: #e2f5ff;
+    border-bottom: 1px solid rgb(184, 183, 183);
 }
 
 nav a {
