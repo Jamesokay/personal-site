@@ -26,6 +26,16 @@
   .titleSub {
       font-size: 5vw !important;
   }
+  .featureBox {
+      justify-content: center;
+  }
+  .featureImage {
+      display: none;
+  }
+  .featureTextBox {
+      width: 90% !important;
+      height: 90% !important;
+  }
 }
 
 .topPanel {
@@ -93,25 +103,32 @@
 
 .featureBox {
     width: 92.5%;
-    height: 20vw;
     border-radius: 1rem;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     background: rgba(18, 18, 18, 0.5);
     margin-bottom: 2vw;
+    padding: 1.5vw;
 }
+
 
 .featureImage {
     border-radius: 0.5rem;
-    width: 30%;
-    height: 70%;
+    width: 500px;
+    height: 300px;
     background: linear-gradient(rgb(37, 55, 88), #211a23);
+    margin-right: 2.5vw;
 }
 
 .featureTextBox {
     width: 60%;
-    height: 70%;
+}
+
+.featureTitle {
+    color: #485063;
+    font-size: 2.5vw;
+    margin-bottom: 2vw;
+    text-align: center;
 }
 
 .featureText {
