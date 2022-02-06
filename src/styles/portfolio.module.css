@@ -7,50 +7,6 @@
     justify-content: space-around;
 }
 
-/* @media screen and (max-width: 480px) {
-    .topPanel {
-        background: red;
-    }
-} */
-
-@media screen and (max-width: 768px) {
-    .topPanel {
-    flex-direction: column;
-    align-items: center;
-  }
-  .text {
-      width: 80% !important;
-      text-align: center;
-  }
-  .videoContainer {
-      min-width: 75vw;
-      min-height: 45.5vw;
-  }
-  .title {
-      font-size: 10vw !important;
-  }
-  .titleSub {
-      font-size: 5vw !important;
-  }
-  .featureBody {
-      flex-direction: column;
-  }
-  .featureImage {
-      width: 70vw !important;
-      height: 43.4vw !important;
-  }
-  .featureTextBox {
-      width: 70vw !important;
-  }
-}
-
-.topPanel {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-bottom: 3rem;
-}
-
 .titleContainer {
     width: 100%;
     padding-top: max(9vw, 4rem);
@@ -73,15 +29,19 @@
     color: #485063;
 }
 
-.videoContainer {
-    width: 45vw;
-    height: 28vw;
+.topPanel {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
     margin-bottom: 3rem;
 }
 
-.video {
-    width: 100%;
-    height: 100%;
+
+.videoContainer {
+    width: 50vw;
+    min-height: 31vw;
+    margin-bottom: 3rem;
+    background: linear-gradient(rgb(37, 55, 88), #211a23);
 }
 
 .quote {
@@ -92,8 +52,7 @@
 }
 
 .text {
-    width: 40%;
-    min-width: 320px;
+    width: 40vw;
     line-height: 2rem;
     font-size: 1.25rem;
     font-weight: 300;
@@ -116,8 +75,10 @@
     flex-direction: column;
     background: #211a23;
     margin-bottom: 2vw;
-    padding-top: 1.5vw;
-    padding-bottom: 3vw;
+    padding-top: 2.5vw;
+    padding-bottom: 6.9vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 
 .featureBody {
@@ -132,8 +93,7 @@
     border-radius: 0.5rem;
     width: 40vw;
     height: 24vw;
-    background: linear-gradient(rgb(37, 55, 88), #211a23);
-    margin-right: 2.5vw;
+    background: rgb(37, 55, 88);
 }
 
 .featureTextBox {
@@ -142,15 +102,57 @@
 
 .featureTitle {
     color: white;
-    font-size: 3vw;
+    font-size: calc(1.5rem + 2vw);
     letter-spacing: 0.3vw;
     font-weight: 300;
-    margin-bottom: 1.5vw;
+    margin-bottom: 3vw;
     text-align: center;
 }
 
 .featureText {
     color: grey;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    font-size: calc(1rem + 0.25vw);
+    line-height: calc(1.5rem + 0.5vw);
 }
+
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 10vw !important;
+    }
+    .titleSub {
+        font-size: 5vw !important;
+    }
+    .topPanel {
+        flex-direction: column;
+        align-items: center;
+    }
+    .videoContainer {
+        width: 75vw !important;
+        height: 46.5vw !important;
+    }
+    .text {
+        width: 75vw !important;
+        text-align: center;
+    }
+    .featureBox {
+        width: 75vw !important;
+    }
+    .featureBody {
+        flex-direction: column;
+    }
+    .featureImage {
+        width: 70vw !important;
+        height: 43.4vw !important;
+        margin-bottom: 5vw;
+    }
+    .featureTextBox {
+        width: 70vw !important;
+        text-align: center;
+    }
+}
+
+/* @media screen and (max-width: 768px) {
+
+} */
+
+
