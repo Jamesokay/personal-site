@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import { container, topPanel, titleContainer, title, titleSub, videoContainer, video, quote, text, features, featureBox, featureTitle, featureImage, featureTextBox, featureText } from '../styles/portfolio.module.css'
+import { container, topPanel, titleContainer, title, titleSub, videoContainer, video, quote, text, features, featureBox, featureTitle, featureBody, featureImage, featureTextBox, featureText } from '../styles/portfolio.module.css'
 
 export default function portfolio() {
     return (
@@ -10,6 +10,8 @@ export default function portfolio() {
             <h1 className={title}>Spotify Clone</h1>
             <span className={titleSub}>Built using React</span>
           </div>
+          
+          
           <div className={container}>
 
 
@@ -43,65 +45,20 @@ export default function portfolio() {
             <h1 className={titleSub}>Features</h1>
             
             <div className={featureBox}>
-              <div className={featureImage} />
-              <div className={featureTextBox}>
-              <p className={featureTitle}>Feature Title</p>
-              <span className={featureText}>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-              laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
-              architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas 
-              sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
-              voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit 
-              amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut 
-              labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, 
-              quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea 
-              commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit 
-              esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas 
-              nulla pariatur?
-              </span>
-              
-              </div>
-            </div>
-
-            <div className={featureBox}>
-              <div className={featureImage} />
-              <div className={featureTextBox}>
-              <p className={featureTitle}>Feature Title</p>
-              <span className={featureText}>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-              laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
-              architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas 
-              sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
-              voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit 
-              amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut 
-              labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, 
-              quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea 
-              commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit 
-              esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas 
-              nulla pariatur?
-              </span>
-              
-              </div>
-            </div>
-
-            <div className={featureBox}>
-              <div className={featureImage} />
-              <div className={featureTextBox}>
-              <p className={featureTitle}>Feature Title</p>
-              <span className={featureText}>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-              laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
-              architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas 
-              sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
-              voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit 
-              amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut 
-              labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, 
-              quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea 
-              commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit 
-              esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas 
-              nulla pariatur?
-              </span>
-              
+              <h2 className={featureTitle}>Feature Title</h2>
+              <div className={featureBody}>  
+                <div className={featureImage} />
+                <div className={featureTextBox}>
+                  <span className={featureText}>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
+                    architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas 
+                    sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
+                    voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit 
+                    amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut 
+                    labore et dolore magnam aliquam quaerat voluptatem.
+                  </span>     
+                </div>
               </div>
             </div>
 

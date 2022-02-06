@@ -7,13 +7,19 @@
     justify-content: space-around;
 }
 
+/* @media screen and (max-width: 480px) {
+    .topPanel {
+        background: red;
+    }
+} */
+
 @media screen and (max-width: 768px) {
     .topPanel {
     flex-direction: column;
     align-items: center;
   }
   .text {
-      width: 80%;
+      width: 80% !important;
       text-align: center;
   }
   .videoContainer {
@@ -26,15 +32,15 @@
   .titleSub {
       font-size: 5vw !important;
   }
-  .featureBox {
-      justify-content: center;
+  .featureBody {
+      flex-direction: column;
   }
   .featureImage {
-      display: none;
+      width: 70vw !important;
+      height: 43.4vw !important;
   }
   .featureTextBox {
-      width: 90% !important;
-      height: 90% !important;
+      width: 70vw !important;
   }
 }
 
@@ -102,35 +108,49 @@
 }
 
 .featureBox {
-    width: 92.5%;
     border-radius: 1rem;
+    width: 90vw;
     display: flex;
     align-items: center;
-    background: rgba(18, 18, 18, 0.5);
+    justify-content: center;
+    flex-direction: column;
+    background: #211a23;
     margin-bottom: 2vw;
-    padding: 1.5vw;
+    padding-top: 1.5vw;
+    padding-bottom: 3vw;
+}
+
+.featureBody {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
 .featureImage {
     border-radius: 0.5rem;
-    width: 500px;
-    height: 300px;
+    width: 40vw;
+    height: 24vw;
     background: linear-gradient(rgb(37, 55, 88), #211a23);
     margin-right: 2.5vw;
 }
 
 .featureTextBox {
-    width: 60%;
+    width: 40vw;
 }
 
 .featureTitle {
-    color: #485063;
-    font-size: 2.5vw;
-    margin-bottom: 2vw;
+    color: white;
+    font-size: 3vw;
+    letter-spacing: 0.3vw;
+    font-weight: 300;
+    margin-bottom: 1.5vw;
     text-align: center;
 }
 
 .featureText {
-    color: white;
+    color: grey;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
 }
