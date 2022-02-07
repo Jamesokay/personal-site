@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import { container, topPanel, titleContainer, title, titleSub, videoContainer, quote, text, features, featureBox, featureTitle, featureBody, featureImage, featureTextBox, featureText } from '../styles/portfolio.module.css'
+import { container, topPanel, titleContainer, title, titleSub, videoContainer, quote, text, features, featuresHeading, featureBox, featureTitle, featureBody, featureImage, featureTextBox, featureText } from '../styles/portfolio.module.css'
 
 export default function portfolio() {
     return (
@@ -23,10 +23,10 @@ export default function portfolio() {
               </div>
             </div>      
             <div className={features}>
-              <h1 className={titleSub}>Features</h1> 
+              <h1 className={featuresHeading}>Features</h1> 
 
               <div className={featureBox}>
-                <h2 className={featureTitle}>Feature One Title</h2>
+                <h2 className={featureTitle}>Recently Played</h2>
                 <div className={featureBody}>  
                   <div className={featureImage} />
                   <div className={featureTextBox}>
@@ -44,7 +44,7 @@ export default function portfolio() {
               </div>
 
               <div className={featureBox}>
-                <h2 className={featureTitle}>Feature Two Title</h2>
+                <h2 className={featureTitle}>Dynamic Colour Grab</h2>
                 <div className={featureBody}>  
                   <div className={featureImage} />
                   <div className={featureTextBox}>
@@ -62,7 +62,7 @@ export default function portfolio() {
               </div>
 
               <div className={featureBox}>
-                <h2 className={featureTitle}>Feature Three Title</h2>
+                <h2 className={featureTitle}>Web Player</h2>
                 <div className={featureBody}>  
                   <div className={featureImage} />
                   <div className={featureTextBox}>
