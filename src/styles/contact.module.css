@@ -11,9 +11,9 @@
 .contact-details {
     list-style: none;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .contact-details-item {
     margin-bottom: 1.5rem;
-    color: #211a23;
 }

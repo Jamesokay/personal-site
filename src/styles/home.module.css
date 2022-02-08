@@ -8,10 +8,14 @@
     padding-top: max(5vw, 4rem);
 }
 
+.textContainer {
+    width: 74%;
+    text-align: justify;
+    text-align-last: justify;
+}
+
 .quote {
-    font-weight: 700;
-    font-size: 6vw;
-    margin-bottom: 0.5rem;
-    letter-spacing: -0.5vw;
-    color: #211a23;
+    font-weight: 500;
+    font-size: 5vw;
+    color: rgb(238, 231, 225);
 }

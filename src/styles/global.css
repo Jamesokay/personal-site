@@ -5,7 +5,7 @@
     padding: 0;
     text-decoration: none;
     font-family: 'Montserrat';
-    color: #485063;
+    color: rgb(238, 231, 225);
 }
 
 html, body {
@@ -19,7 +19,7 @@ html, body {
 .page {
     height: 100%;
     width: 100%;
-    background: #e2f5ff;
+    background: rgb(26, 25, 25);
 } 
 
 nav {
@@ -29,25 +29,25 @@ nav {
     align-items: center;
     position: fixed;
     width: 99%;
-    background: #e2f5ff;
-    border-bottom: 1px solid rgb(184, 183, 183);
+    background: rgb(26, 25, 25);
+    border-bottom: 1px solid rgb(238, 231, 225);
 }
 
 nav a {
     margin-right: 1rem;
     font-weight: 400;
-    color: grey;
+    color: rgb(172, 171, 171);
     transition: color 0.3s ease-in-out;
 }
 
 nav a:hover {
-    color: white;
+    color: rgb(238, 231, 225);
 }
 
 .active {
-    color: #211a23;
+    color: rgb(238, 231, 225);
 }
 
 .active:hover {
-    color: #211a23 !important;
+    color: rgb(238, 231, 225) !important;
 }
