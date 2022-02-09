@@ -9,13 +9,14 @@
 }
 
 .textContainer {
-    width: 74%;
+    width: 72%;
     text-align: justify;
     text-align-last: justify;
 }
 
 .quote {
-    font-weight: 500;
+    font-family: Noto Serif;
+    font-weight: 700;
     font-size: 5vw;
     color: rgb(238, 231, 225);
     opacity: 0;
@@ -23,6 +24,12 @@
     animation-delay: 0.25s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+
+.italic {
+    font-family: Noto Serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
 @keyframes fadein {

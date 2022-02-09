@@ -8,13 +8,14 @@
 
 .titleContainer {
     width: 100%;
-    padding-top: max(9vw, 4rem);
-    padding-bottom: max(5vw, 2rem);
+    padding-top: max(9vw, 6rem);
+    padding-bottom: 9vw;
     text-align: center;
 }
 
 .title {
-    font-weight: 300;
+    font-family: Novo Serif;
+    font-weight: 700;
     font-size: 10vw;
     opacity: 0;
     animation: fadein 2s ease;
@@ -39,7 +40,7 @@
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    margin-bottom: 6vw;
+    margin-bottom: 8.2vw;
 }
 
 
@@ -55,9 +56,11 @@
 }
 
 .quote {
-    font-weight: 300;
-    font-size: calc(1.25rem + 0.5vw);
-    line-height: calc(1.5rem + 0.5vw);
+    font-family: Novo Serif;
+    font-weight: 700;
+    font-size: calc(2rem + 0.5vw);
+    line-height: calc(2rem + 0.5vw);
+    text-align: center;
 }
 
 .text {
@@ -78,13 +81,12 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-top: 5vw;
 }
 
 .featuresHeading {
-    font-weight: 300;
-    font-size: 5vw;
-    letter-spacing: 1vw;
+    font-family: Novo Serif;
+    font-weight: 700;
+    font-size: 8vw;
     margin-bottom: 5vw;
 }
 
@@ -130,7 +132,7 @@
 
 @media screen and (max-width: 1024px) {
     .title {
-        font-size: 11vw !important;
+        font-size: 13vw !important;
     }
     .titleSub {
         font-size: 5vw !important;
@@ -142,7 +144,7 @@
     .videoContainer {
         width: 75vw !important;
         height: 46.5vw !important;
-        margin-bottom: 3vw;
+        margin-bottom: 8vw;
     }
     .text {
         width: 75vw !important;

@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Layout from '../components/Layout'
-import { container, textContainer, quote } from '../styles/home.module.css'
+import { container, textContainer, quote, italic } from '../styles/home.module.css'
 
 const IndexPage = () => {
   return (
@@ -9,7 +9,7 @@ const IndexPage = () => {
         <div className={textContainer}>
           <span className={quote}>
             I am a full-stack developer passionate about creating web applications 
-            that are both functional and elegant
+            that are both <span className={italic}>functional</span> and <span className={italic}>elegant</span>
           </span>
         </div>
       </div>
