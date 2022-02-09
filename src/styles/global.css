@@ -20,6 +20,7 @@ html, body {
     height: 100%;
     width: 100%;
     background: rgb(26, 25, 25);
+    z-index: 1;
 } 
 
 nav {
@@ -31,6 +32,7 @@ nav {
     width: 99%;
     background: rgb(26, 25, 25);
     border-bottom: 1px solid rgb(238, 231, 225);
+    z-index: 2;
 }
 
 nav a {

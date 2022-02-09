@@ -16,7 +16,11 @@
 .title {
     font-weight: 300;
     font-size: 10vw;
-    animation: fadein 2s;
+    opacity: 0;
+    animation: fadein 2s ease;
+    animation-delay: 0.25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .titleSub {
@@ -24,7 +28,11 @@
     font-size: 3.5vw;
     letter-spacing: 0.5vw;
     margin-bottom: 3rem;
-    animation: fadein 2s;
+    opacity: 0;
+    animation: fadein 2s ease;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .topPanel {
@@ -39,10 +47,14 @@
     width: 45vw;
     min-height: 27.9vw;
     background: linear-gradient(rgb(37, 55, 88), #211a23);
+    opacity: 0;
+    animation: fadein 2s ease;
+    animation-delay: 0.75s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .quote {
-    color: #211a23;
     font-weight: 300;
     font-size: calc(1.25rem + 0.5vw);
     line-height: calc(1.5rem + 0.5vw);
@@ -53,6 +65,11 @@
     line-height: 2rem;
     font-size: 1.25rem;
     font-weight: 300;
+    opacity: 0;
+    animation: fadein 2s ease;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .features {

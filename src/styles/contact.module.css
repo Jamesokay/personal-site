@@ -13,14 +13,33 @@
     font-size: 7rem;
     font-weight: 300;
     margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadein 2s ease;
+    animation-delay: 0.25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .contact-details {
     list-style: none;
     font-size: 1.5rem;
     text-align: center;
+    opacity: 0;
+    animation: fadein 2s ease;
+    animation-delay: 0.75s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .contact-details-item {
     margin-bottom: 1.5rem;
+}
+
+@keyframes fadein {
+    0% { 
+        opacity: 0; 
+    }
+    100% { 
+        opacity: 1; 
+    }
 }

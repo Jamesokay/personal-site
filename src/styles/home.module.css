@@ -18,7 +18,11 @@
     font-weight: 500;
     font-size: 5vw;
     color: rgb(238, 231, 225);
-    animation: fadein 2s;
+    opacity: 0;
+    animation: fadein 2s ease;
+    animation-delay: 0.25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fadein {
