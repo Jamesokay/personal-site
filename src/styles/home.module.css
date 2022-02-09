@@ -18,4 +18,10 @@
     font-weight: 500;
     font-size: 5vw;
     color: rgb(238, 231, 225);
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
