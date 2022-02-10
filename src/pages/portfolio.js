@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import FadeInSection from '../components/FadeInSection'
 import { container, topPanel, titleContainer, title, titleSub, videoContainer, quote, text, features, featuresHeading, featureBox, featureTitle, featureBody, featureImage, featureTextBox, featureText } from '../styles/portfolio.module.css'
 
 export default function portfolio() {
@@ -23,14 +24,16 @@ export default function portfolio() {
               </div>
             </div>      
             <div className={features}>
-              <h1 className={featuresHeading}>Features</h1> 
-
-              <div className={featureBox}>
-                <h2 className={featureTitle}>Recently Played</h2>
-                <div className={featureBody}>  
-                  <div className={featureImage} />
-                  <div className={featureTextBox}>
-                    <span className={featureText}>
+              <FadeInSection>
+                <h1 className={featuresHeading}>Features</h1> 
+              </FadeInSection>
+              <FadeInSection>
+                <div className={featureBox}>
+                  <h2 className={featureTitle}>Recently Played</h2>
+                  <div className={featureBody}>  
+                    <div className={featureImage} />
+                    <div className={featureTextBox}>
+                      <span className={featureText}>
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
                     laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
                     architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas 
@@ -38,17 +41,18 @@ export default function portfolio() {
                     voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit 
                     amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut 
                     labore et dolore magnam aliquam quaerat voluptatem.
-                    </span>     
+                      </span>     
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              <div className={featureBox}>
-                <h2 className={featureTitle}>Dynamic Colour Grab</h2>
-                <div className={featureBody}>  
-                  <div className={featureImage} />
-                  <div className={featureTextBox}>
-                    <span className={featureText}>
+              </FadeInSection>
+              <FadeInSection>
+                <div className={featureBox}>
+                  <h2 className={featureTitle}>Dynamic Colour Grab</h2>
+                  <div className={featureBody}>  
+                    <div className={featureImage} />
+                    <div className={featureTextBox}>
+                      <span className={featureText}>
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
                     laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
                     architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas 
@@ -56,17 +60,18 @@ export default function portfolio() {
                     voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit 
                     amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut 
                     labore et dolore magnam aliquam quaerat voluptatem.
-                    </span>     
+                      </span>     
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              <div className={featureBox}>
-                <h2 className={featureTitle}>Web Player</h2>
-                <div className={featureBody}>  
-                  <div className={featureImage} />
-                  <div className={featureTextBox}>
-                    <span className={featureText}>
+              </FadeInSection>
+              <FadeInSection>
+                <div className={featureBox}>
+                  <h2 className={featureTitle}>Web Player</h2>
+                  <div className={featureBody}>  
+                    <div className={featureImage} />
+                    <div className={featureTextBox}>
+                      <span className={featureText}>
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
                     laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
                     architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas 
@@ -74,13 +79,12 @@ export default function portfolio() {
                     voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit 
                     amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut 
                     labore et dolore magnam aliquam quaerat voluptatem.
-                    </span>     
+                      </span>     
+                    </div>
                   </div>
                 </div>
-              </div>
-
+              </FadeInSection>
             </div>
-
           </div>
         </Layout>
     )
