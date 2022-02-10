@@ -5,17 +5,26 @@ export default function FadeInSection({children}) {
     const [isVisible, setVisible] = React.useState(false)
   
     React.useEffect(() => {
-      const test = domRef.current
-      const observer = new IntersectionObserver(entries => {
+      const current = domRef.current
+
+      const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.25
+      }
+
+      const observerCallback = entries => {
         if (entries[0].isIntersecting) {
-          setVisible(true)      
-          observer.unobserve(test)
-        }
-      })
+            setVisible(true)      
+            observer.unobserve(current)
+          }
+      }
+
+      const observer = new IntersectionObserver(observerCallback, options)
       
-      observer.observe(domRef.current)
+      observer.observe(current)
       
-      return () => observer.unobserve(test)
+      return () => observer.unobserve(current)
     }, [])
   
     return (
