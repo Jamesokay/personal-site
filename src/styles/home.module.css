@@ -5,23 +5,37 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding-top: max(5vw, 4rem);
 }
 
 .textContainer {
-    width: 72%;
+    width: 62.5%;
     text-align: justify;
     text-align-last: justify;
+}
+
+.name {
+    font-family: Noto Serif;
+    font-weight: 700;
+    font-size: 8vw;
+    color: rgb(238, 231, 225);
+    margin-bottom: 3vw;
+    opacity: 0;
+    animation: fadein 2s ease;
+    animation-delay: 0.25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .quote {
     font-family: Noto Serif;
     font-weight: 700;
-    font-size: 5vw;
+    font-size: 3.5vw;
     color: rgb(238, 231, 225);
     opacity: 0;
     animation: fadein 2s ease;
-    animation-delay: 0.25s;
+    animation-delay: 0.75s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
