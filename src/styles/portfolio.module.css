@@ -78,16 +78,8 @@
 .features {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
-}
-
-.featuresHeading {
-    font-family: Novo Serif;
-    font-weight: 700;
-    font-size: 8vw;
-    margin-bottom: 5vw;
 }
 
 .featureBox {
@@ -99,14 +91,6 @@
     margin-bottom: 5vw;
 }
 
-.featureBody {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-
 .featureImage {
     width: 35vw;
     height: 21.7vw;
@@ -115,14 +99,6 @@
 
 .featureTextBox {
     width: 50vw;
-}
-
-.featureTitle {
-    font-size: 4vw;
-    letter-spacing: 0.3vw;
-    font-weight: 300;
-    margin-bottom: 3vw;
-    text-align: center;
 }
 
 .featureText {

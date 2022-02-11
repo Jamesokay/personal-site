@@ -60,12 +60,87 @@ nav a:hover {
     justify-content: center;
     width: 100%;
     opacity: 0;
-    visibility: hidden;
     transition: opacity 1.5s ease;
-    will-change: opacity, visibility;
+    will-change: opacity;
   }
 
 .fade-in-section.is-visible {
     opacity: 1;
-    visibility: visible;
+}
+
+.featuresHeading {
+    font-family: Novo Serif;
+    font-weight: 700;
+    font-size: 8vw;
+    margin-bottom: 5vw;
+    opacity: 0;
+}
+
+.scrolled.featuresHeading {
+    animation: fadein 1.5s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.line {
+    height: 2px;
+    margin-right: auto;
+    margin-left: 5%;
+    margin-bottom: 2.5vw;
+    background: rgb(238, 231, 225);
+}
+
+.scrolled.line {
+    animation: drawLine 1.5s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.featureTitle {
+    font-size: 4vw;
+    letter-spacing: 0.3vw;
+    font-weight: 300;
+    margin-bottom: 3vw;
+    text-align: center;
+    opacity: 0;
+}
+
+.scrolled.featureTitle {
+    animation: fadein 1.5s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.featureBody {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0;
+}
+
+.scrolled.featureBody {
+    animation: fadein 1.5s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes fadein {
+    0% { 
+        opacity: 0; 
+    }
+    100% { 
+        opacity: 1; 
+    }
+}
+
+@keyframes drawLine {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
 }

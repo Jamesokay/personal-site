@@ -1,9 +1,65 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import FadeInSection from '../components/FadeInSection'
-import { container, topPanel, titleContainer, title, titleSub, videoContainer, quote, text, features, featuresHeading, featureBox, featureTitle, featureBody, featureImage, featureTextBox, featureText } from '../styles/portfolio.module.css'
+import { container, topPanel, titleContainer, title, titleSub, videoContainer, quote, text, features, featureBox, featureImage, featureTextBox, featureText } from '../styles/portfolio.module.css'
 
-export default function portfolio() {
+export default function Portfolio() {
+    
+  React.useEffect(() => {
+    const scrollElements = document.querySelectorAll(".js-scroll");
+    var throttleTimer;
+
+    const throttle = (callback, time) => {
+      if (throttleTimer) return;
+
+      throttleTimer = true;
+      setTimeout(() => {
+        callback();
+        throttleTimer = false;
+      }, time);
+    }
+
+    const elementInView = (el, dividend = 1) => {
+      const elementTop = el.getBoundingClientRect().top;
+
+      return (elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend);
+    };
+
+    const elementOutofView = (el) => {
+      const elementTop = el.getBoundingClientRect().top;
+
+      return (elementTop > (window.innerHeight || document.documentElement.clientHeight));
+    };
+
+    const displayScrollElement = (element) => {
+      element.classList.add("scrolled");
+    };
+
+    const hideScrollElement = (element) => {
+      element.classList.remove("scrolled");
+    };
+
+    const handleScrollAnimation = () => {
+      scrollElements.forEach((el) => {
+        if (elementInView(el, 1.05)) {
+          displayScrollElement(el);
+        } else if (elementOutofView(el)) {
+          hideScrollElement(el)
+        }
+      })
+    }
+
+    window.addEventListener('scroll', () => {
+      throttle(handleScrollAnimation, 250);
+    })
+
+    return function cleanUp() {
+      window.removeEventListener('scroll', () => {
+        throttle(handleScrollAnimation, 250);
+      })
+    }
+  }, [])
+
+
     return (
         <Layout>       
           <div className={titleContainer}>
@@ -24,13 +80,12 @@ export default function portfolio() {
               </div>
             </div>      
             <div className={features}>
-              <FadeInSection>
-                <h1 className={featuresHeading}>Features</h1> 
-              </FadeInSection>
-              <FadeInSection>
+              
+                <h1 className='js-scroll featuresHeading'>Features</h1> 
+                <div className='js-scroll line' />
                 <div className={featureBox}>
-                  <h2 className={featureTitle}>Recently Played</h2>
-                  <div className={featureBody}>  
+                  <h2 className='js-scroll featureTitle'>Recently Played</h2>
+                  <div className='js-scroll featureBody'>  
                     <div className={featureImage} />
                     <div className={featureTextBox}>
                       <span className={featureText}>
@@ -45,11 +100,10 @@ export default function portfolio() {
                     </div>
                   </div>
                 </div>
-              </FadeInSection>
-              <FadeInSection>
+                <div className='js-scroll line' />
                 <div className={featureBox}>
-                  <h2 className={featureTitle}>Dynamic Colour Grab</h2>
-                  <div className={featureBody}>  
+                  <h2 className='js-scroll featureTitle'>Dynamic Colour Grab</h2>
+                  <div className='js-scroll featureBody'>  
                     <div className={featureImage} />
                     <div className={featureTextBox}>
                       <span className={featureText}>
@@ -64,11 +118,10 @@ export default function portfolio() {
                     </div>
                   </div>
                 </div>
-              </FadeInSection>
-              <FadeInSection>
+                <div className='js-scroll line' />
                 <div className={featureBox}>
-                  <h2 className={featureTitle}>Web Player</h2>
-                  <div className={featureBody}>  
+                  <h2 className='js-scroll featureTitle'>Web Player</h2>
+                  <div className='js-scroll featureBody'>  
                     <div className={featureImage} />
                     <div className={featureTextBox}>
                       <span className={featureText}>
@@ -83,7 +136,7 @@ export default function portfolio() {
                     </div>
                   </div>
                 </div>
-              </FadeInSection>
+              
             </div>
           </div>
         </Layout>
