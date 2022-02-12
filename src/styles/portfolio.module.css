@@ -129,9 +129,6 @@
     .featureBox {
         width: 75vw !important;
     }
-    .featureBody {
-        flex-direction: column;
-    }
     .featureImage {
         width: 70vw !important;
         height: 43.4vw !important;
