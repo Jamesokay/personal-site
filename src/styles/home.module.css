@@ -1,26 +1,24 @@
 .container {
     box-sizing: border-box;
-    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: max(5vw, 4rem);
 }
 
 .textContainer {
-    width: 62.5%;
-    text-align: justify;
-    text-align-last: justify;
+    display: flex;
+    width: 75%;
+    justify-content: space-around;
 }
 
 .name {
     font-family: Noto Serif;
     font-weight: 700;
-    font-size: 8vw;
+    font-size: 9vw;
     color: rgb(238, 231, 225);
-    margin-bottom: 3vw;
+    margin-bottom: 2vw;
     opacity: 0;
     animation: fadein 2s ease;
     animation-delay: 0.25s;
@@ -29,10 +27,28 @@
 }
 
 .quote {
+    width: 45%;
     font-family: Noto Serif;
-    font-weight: 700;
-    font-size: 3.5vw;
+    font-weight: 400;
+    font-size: calc(1rem + 1.5vw);
     color: rgb(238, 231, 225);
+    opacity: 0;
+    animation: fadein 2s ease;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.italic {
+    font-family: Noto Serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.image {
+    width: 31.25vw;
+    height: 23.4vw;
+    object-fit: cover;
     opacity: 0;
     animation: fadein 2s ease;
     animation-delay: 0.75s;
@@ -40,22 +56,39 @@
     animation-fill-mode: forwards;
 }
 
-.italic {
-    font-family: Noto Serif;
-    font-weight: 700;
-    font-style: italic;
-}
-
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
 
-/* @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1060px) {
+    .textContainer {
+        width: 90%;
+    }
     .name {
-        font-size: 10vw;
+        font-size: 11vw;
+    }
+    .image {
+        width: 44vw;
+        height: 33vw;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .name {
+        margin-bottom: 8vw;
+    }
+    .textContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image {
+        width: 80vw;
+        height: 60vw;
+        margin-bottom: 8vw;;
     }
     .quote {
-        font-size: 4.5vw;
+        width: 80%;
     }
-} */
+}
