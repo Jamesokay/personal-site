@@ -13,7 +13,6 @@
     font-family: Novo Serif;
     font-size: 9rem;
     font-weight: 700;
-    transform: translateY(3rem);
     margin-bottom: 2rem;
     opacity: 0;
     animation: fadein 1.5s ease;
@@ -28,7 +27,7 @@
     text-align: center;
     opacity: 0;
     animation: fadein 1.5s ease;
-    animation-delay: 1.25s;
+    animation-delay: 0.75s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -42,7 +41,6 @@
         opacity: 0; 
     }
     100% { 
-        opacity: 1; 
-        transform: none;
+        opacity: 1;
     }
 }

@@ -8,33 +8,18 @@
 }
 
 .textContainer {
-    display: flex;
-    width: 75%;
-    justify-content: space-around;
-}
-
-.name {
-    font-family: Noto Serif;
-    font-weight: 700;
-    font-size: 9vw;
-    color: rgb(238, 231, 225);
-    margin-bottom: 2vw;
-    opacity: 0;
-    animation: fadein 2s ease;
-    animation-delay: 0.25s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    width: 50%;
+    text-align: center;
 }
 
 .quote {
-    width: 45%;
     font-family: Noto Serif;
     font-weight: 400;
-    font-size: calc(1rem + 1.5vw);
+    font-size: 2.5rem;
     color: rgb(238, 231, 225);
     opacity: 0;
     animation: fadein 2s ease;
-    animation-delay: 1s;
+    animation-delay: 0.25s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -45,17 +30,6 @@
     font-style: italic;
 }
 
-.image {
-    width: 31.25vw;
-    height: 23.4vw;
-    object-fit: cover;
-    opacity: 0;
-    animation: fadein 2s ease;
-    animation-delay: 0.75s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -64,31 +38,5 @@
 @media screen and (max-width: 1060px) {
     .textContainer {
         width: 90%;
-    }
-    .name {
-        font-size: 11vw;
-    }
-    .image {
-        width: 44vw;
-        height: 33vw;
-    }
-
-}
-
-@media screen and (max-width: 800px) {
-    .name {
-        margin-bottom: 8vw;
-    }
-    .textContainer {
-        flex-direction: column;
-        align-items: center;
-    }
-    .image {
-        width: 80vw;
-        height: 60vw;
-        margin-bottom: 8vw;;
-    }
-    .quote {
-        width: 80%;
     }
 }

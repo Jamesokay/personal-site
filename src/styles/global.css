@@ -15,12 +15,12 @@ html, body {
     overscroll-behavior: none;
     margin: 0;
     padding: 0;
+    background: rgb(26, 25, 25);
 }
 
 .page {
     height: 100%;
     width: 100%;
-    background: rgb(26, 25, 25);
     z-index: 1;
 } 
 
