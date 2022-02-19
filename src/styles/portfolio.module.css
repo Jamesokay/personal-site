@@ -9,7 +9,7 @@
 .titleContainer {
     width: 100%;
     padding-top: max(9vw, 6rem);
-    padding-bottom: 9vw;
+    padding-bottom: 5vw;
     text-align: center;
 }
 
@@ -28,7 +28,7 @@
     font-weight: 300;
     font-size: 3.5vw;
     letter-spacing: 0.5vw;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     opacity: 0;
     animation: fadein 2s ease;
     animation-delay: 0.5s;
@@ -45,8 +45,8 @@
 
 
 .videoContainer {
-    width: 45vw;
-    min-height: 27.9vw;
+    width: 50vw;
+    min-height: 31vw;
     background: linear-gradient(rgb(37, 55, 88), #211a23);
     opacity: 0;
     animation: fadein 2s ease;
@@ -65,8 +65,8 @@
 
 .text {
     width: 40vw;
-    line-height: 2rem;
-    font-size: 1.25rem;
+    font-size: 2vw;
+    line-height: 3vw;
     font-weight: 300;
     opacity: 0;
     animation: fadein 2s ease;

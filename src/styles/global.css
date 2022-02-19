@@ -83,7 +83,7 @@ nav a:hover {
 }
 
 .line {
-    height: 2px;
+    height: 1px;
     margin-right: auto;
     margin-left: 5%;
     margin-bottom: 2.5vw;
@@ -128,6 +128,17 @@ nav a:hover {
 @media screen and (max-width: 1024px) {
     .featureBody {
         flex-direction: column;
+        margin-bottom: 2.5vw;
+    }
+    .line {
+        margin-bottom: 5vw;
+    }
+    .featuresHeading {
+        font-size: 11vw;
+    }
+    .featureTitle {
+        font-size: 5vw;
+        margin-bottom: 6vw;
     }
 }
 
