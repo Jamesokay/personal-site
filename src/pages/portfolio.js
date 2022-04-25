@@ -1,128 +1,87 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import { container, topPanel, titleContainer, title, titleSub, videoContainer, features, featureBox, featureImage, featureTextBox, featureText } from '../styles/portfolio.module.css'
+import { container, titleContainer, title, projects, projectContainer, projectTitle, projectImageFrame, projectImageContainer, projectDescriptionContainer, projectDescription } from '../styles/portfolio.module.css'
 
 export default function Portfolio() {
     
-  React.useEffect(() => {
-    const scrollElements = document.querySelectorAll(".js-scroll");
-    var throttleTimer;
+  // React.useEffect(() => {
+  //   const scrollElements = document.querySelectorAll(".js-scroll");
+  //   var throttleTimer;
 
-    const throttle = (callback, time) => {
-      if (throttleTimer) return;
+  //   const throttle = (callback, time) => {
+  //     if (throttleTimer) return;
 
-      throttleTimer = true;
-      setTimeout(() => {
-        callback();
-        throttleTimer = false;
-      }, time);
-    }
+  //     throttleTimer = true;
+  //     setTimeout(() => {
+  //       callback();
+  //       throttleTimer = false;
+  //     }, time);
+  //   }
 
-    const elementInView = (el, dividend = 1) => {
-      const elementTop = el.getBoundingClientRect().top;
+  //   const elementInView = (el, dividend = 1) => {
+  //     const elementTop = el.getBoundingClientRect().top;
 
-      return (elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend);
-    };
+  //     return (elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend);
+  //   };
 
-    const elementOutofView = (el) => {
-      const elementTop = el.getBoundingClientRect().top;
+  //   const elementOutofView = (el) => {
+  //     const elementTop = el.getBoundingClientRect().top;
 
-      return (elementTop > (window.innerHeight || document.documentElement.clientHeight));
-    };
+  //     return (elementTop > (window.innerHeight || document.documentElement.clientHeight));
+  //   };
 
-    const displayScrollElement = (element) => {
-      element.classList.add("scrolled");
-    };
+  //   const displayScrollElement = (element) => {
+  //     element.classList.add("scrolled");
+  //   };
 
-    const hideScrollElement = (element) => {
-      element.classList.remove("scrolled");
-    };
+  //   const hideScrollElement = (element) => {
+  //     element.classList.remove("scrolled");
+  //   };
 
-    const handleScrollAnimation = () => {
-      scrollElements.forEach((el) => {
-        if (elementInView(el, 1.05)) {
-          displayScrollElement(el);
-        } else if (elementOutofView(el)) {
-          hideScrollElement(el)
-        }
-      })
-    }
+  //   const handleScrollAnimation = () => {
+  //     scrollElements.forEach((el) => {
+  //       if (elementInView(el, 1.05)) {
+  //         displayScrollElement(el);
+  //       } else if (elementOutofView(el)) {
+  //         hideScrollElement(el)
+  //       }
+  //     })
+  //   }
 
-    window.addEventListener('scroll', () => {
-      throttle(handleScrollAnimation, 250);
-    })
+  //   window.addEventListener('scroll', () => {
+  //     throttle(handleScrollAnimation, 250);
+  //   })
 
-    return function cleanUp() {
-      window.removeEventListener('scroll', () => {
-        throttle(handleScrollAnimation, 250);
-      })
-    }
-  }, [])
+  //   return function cleanUp() {
+  //     window.removeEventListener('scroll', () => {
+  //       throttle(handleScrollAnimation, 250);
+  //     })
+  //   }
+  // }, [])
 
 
     return (
         <Layout>       
           <div className={titleContainer}>
-            <h1 className={title}>Spotify Clone</h1>
-            <span className={titleSub}>Built using React</span>
+            <h1 className={title}>Projects</h1>
           </div>      
           <div className={container}>
-            <div className={topPanel}>
-              <div className={videoContainer} />
-            </div>      
-            <div className={features}>
-              
-                <h1 className='js-scroll featuresHeading'>Features</h1> 
-                <div className='js-scroll line' />
-                <div className={featureBox}>
-                  <h2 className='js-scroll featureTitle'>Recently Played</h2>
-                  <div className='js-scroll featureBody'>  
-                    <div className={featureImage} />
-                    <div className={featureTextBox}>
-                      <span className={featureText}>
+            <div className={projects}>
+                <div className={projectContainer}>
+                    <div className={projectImageFrame}>
+                      <div className={projectImageContainer} />
+                    </div>
+                    <div className={projectDescriptionContainer}>
+                      <span className={projectTitle}>Reactor</span>
+                      <span className={projectDescription}>
                         This section is generated by querying the Spotify API for user’s 
                         recently played tracks, reading the context (album, playlist or artist) 
                         in which each track was played, querying the Spotify API once again for 
-                        data on this particular context, and then using the response to create 
-                        an object with the necessary properties. These objects are then used to 
-                        generate each individual card     
+                        data on this particular context.   
                       </span>     
                     </div>
-                  </div>
                 </div>
-                <div className='js-scroll line' />
-                <div className={featureBox}>
-                  <h2 className='js-scroll featureTitle'>Dynamic Colour Grab</h2>
-                  <div className='js-scroll featureBody'>  
-                    <div className={featureImage} />
-                    <div className={featureTextBox}>
-                      <span className={featureText}>
-                        This feature makes use of the Canvas API, drawing each object’s image 
-                        (e.g. album artwork, playlist image or artist photo) on an off-screen canvas, 
-                        then reading the image data (a bitmap array) in order to calculate the 
-                        average RGB colour value for a given region of the image. When the card is 
-                        hovered over, the background colour of the container transitions to this value, 
-                        replicating the effect seen on the live site.
-                      </span>     
-                    </div>
-                  </div>
                 </div>
-                <div className='js-scroll line' />
-                <div className={featureBox}>
-                  <h2 className='js-scroll featureTitle'>Web Player</h2>
-                  <div className='js-scroll featureBody'>  
-                    <div className={featureImage} />
-                    <div className={featureTextBox}>
-                      <span className={featureText}>
-                        A fully functional web player, built using Spotify Playback SDK. Users are able 
-                        to play, pause, skip, repeat, rewind, shuffle, adjust the volume, and drag to 
-                        the desired position within a given track.     
-                      </span>     
-                    </div>
-                  </div>
-                </div>
-              
-            </div>
           </div>
         </Layout>
     )

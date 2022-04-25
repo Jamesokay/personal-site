@@ -16,94 +16,75 @@
 .title {
     font-family: Novo Serif;
     font-weight: 700;
-    font-size: 10vw;
-    opacity: 0;
+    font-size: 6rem;
+    /* opacity: 0;
     animation: fadein 2s ease;
     animation-delay: 0.25s;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
-
-.titleSub {
-    font-weight: 300;
-    font-size: 3.5vw;
-    letter-spacing: 0.5vw;
-    margin-bottom: 2rem;
-    opacity: 0;
-    animation: fadein 2s ease;
-    animation-delay: 0.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-.topPanel {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-bottom: 8.2vw;
-}
-
 
 .videoContainer {
     width: 50vw;
     min-height: 31vw;
     background: linear-gradient(rgb(37, 55, 88), #211a23);
-    opacity: 0;
+    /* opacity: 0;
     animation: fadein 2s ease;
     animation-delay: 0.75s;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
-.quote {
-    font-family: Novo Serif;
-    font-weight: 400;
-    font-size: calc(2rem + 0.5vw);
-    line-height: calc(2rem + 0.5vw);
-    text-align: center;
-}
-
-.text {
-    width: 40vw;
-    font-size: 2vw;
-    line-height: 3vw;
-    font-weight: 300;
-    opacity: 0;
-    animation: fadein 2s ease;
-    animation-delay: 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-.features {
+.projects {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding-bottom: 3rem;
 }
 
-.featureBox {
-    width: 100%;
+.projectContainer {
     display: flex;
     align-items: center;
+}
+
+.projectTitle {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.projectInfo {
+    display: flex;
+}
+
+.projectImageFrame {
+    width: 60vw;
+    height: 33.75vw;
+    background: #ccf7d9;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.projectImageContainer {
+    width: 50.5vw;
+    height: 28.4vw;
+    background: #74e997;
+}
+
+.projectDescriptionContainer {
+    width: 20vw;
+    display: flex;
     flex-direction: column;
-    margin-bottom: 5vw;
+    justify-content: flex-start;
+    height: 33.75vw;
 }
 
-.featureImage {
-    width: 35vw;
-    height: 21.7vw;
-    background: rgb(37, 55, 88);
-}
-
-.featureTextBox {
-    width: 50vw;
-}
-
-.featureText {
-    font-size: calc(1rem + 0.25vw);
-    line-height: calc(1.5rem + 0.5vw);
+.projectDescription {
+    /* font-size: calc(1rem + 0.25vw);
+    line-height: calc(1.5rem + 0.5vw); */
+    line-height: 1.5rem;
 }
 
 @media screen and (max-width: 1024px) {
