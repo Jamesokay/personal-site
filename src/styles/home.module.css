@@ -16,7 +16,6 @@
     font-family: Noto Serif;
     font-weight: 400;
     font-size: 2.5rem;
-    color: rgb(238, 231, 225);
     opacity: 0;
     animation: fadein 2s ease;
     animation-delay: 0.25s;
