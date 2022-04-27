@@ -1,0 +1,82 @@
+.sliderContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.sliderImageContainer {
+    width: 50.5vw;
+    height: 32vw;
+    position: relative;
+  }
+  
+  .inactiveSlide {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .activeSlide {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slideImage {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 1rem;
+    margin-top: -3rem;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 0px 5px 5px 0px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.5s ease-in;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 5px 0px 0px 5px;
+  }
+  
+  .dotsContainer {
+    width: fit-content;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 0.5rem;
+    width: 0.5rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .activeDot,
+  .dot:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }

@@ -1,10 +1,23 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import reactorSS1 from '../images/reactorSS1.png'
+import reactorSS2 from '../images/reactorSS2.png'
 import spotifySS1 from '../images/spotifySS1.png'
+import Slider from '../components/Slider'
 import { container, projects, projectContainer, reactorContainer, spotifyContainer, projectTitle, spotifyText, projectImage, projectImageContainer, projectDescriptionContainer, projectDescription } from '../styles/portfolio.module.css'
 
 export default function Portfolio() {
+
+  const slideImages = [
+    {
+        desc: 'The Reactor feed',
+        url: reactorSS1
+    },
+    {
+        desc: 'The Reactor post page',
+        url: reactorSS2
+    }
+]
     
   // React.useEffect(() => {
   //   const scrollElements = document.querySelectorAll(".js-scroll");
@@ -67,9 +80,10 @@ export default function Portfolio() {
           <div className={container}>
             <div className={projects}>
                 <div className={`${projectContainer} ${reactorContainer}`}>
-                      <div className={projectImageContainer}>
+                      {/* <div className={projectImageContainer}>
                         <img className={projectImage} src={reactorSS1} alt='the reactor feed' />
-                      </div>
+                      </div> */}
+                      <Slider slideImages={slideImages} />
                     <div className={projectDescriptionContainer}>
                       <span className={projectTitle}>Reactor</span>
                       <span className={projectDescription}>
