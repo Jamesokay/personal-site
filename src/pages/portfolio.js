@@ -1,7 +1,10 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import reactorSS1 from '../images/reactorSS1.png'
-import reactorSS2 from '../images/reactorSS2.png'
+import reactorFeed from '../images/reactorFeed.png'
+import reactorLogin from '../images/reactorlogin.png'
+import reactorPost from '../images/reactorPost.png'
+import reactorProfile from '../images/reactorProfile.png'
+import reactorUpload from '../images/reactorUpload.png'
 import spotifySS1 from '../images/spotifySS1.png'
 import Slider from '../components/Slider'
 import { container, projects, projectContainer, reactorContainer, spotifyContainer, projectTitle, spotifyText, projectImage, projectImageContainer, projectDescriptionContainer, projectDescription } from '../styles/portfolio.module.css'
@@ -10,12 +13,24 @@ export default function Portfolio() {
 
   const slideImages = [
     {
+        desc: 'The Reactor login page',
+        url: reactorLogin
+    },
+    {
         desc: 'The Reactor feed',
-        url: reactorSS1
+        url: reactorFeed
     },
     {
         desc: 'The Reactor post page',
-        url: reactorSS2
+        url: reactorPost
+    },
+    {
+        desc: 'The Reactor profile page',
+        url: reactorProfile
+    },
+    {
+      desc: 'The Reactor upload page',
+      url: reactorUpload
     }
 ]
     

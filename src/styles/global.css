@@ -5,7 +5,7 @@
     padding: 0;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-    color: #424651;
+    color: white;
 }
 
 html, body {
@@ -14,7 +14,7 @@ html, body {
     overscroll-behavior: none;
     margin: 0;
     padding: 0;
-    background: #FAFAFA;
+    background:rgb(41, 41, 41);
 }
 
 .page {
@@ -30,7 +30,6 @@ nav {
     justify-content: center;
     position: fixed;
     width: 100%;
-    background: #FAFAFA;
     z-index: 2;
 }
 
@@ -46,11 +45,11 @@ nav a:hover {
 }
 
 .active {
-    color: #424651;
+    color: white;
 }
 
 .active:hover {
-    color: #424651 !important;
+    color: white !important;
 }
 
 .fade-in-section {
