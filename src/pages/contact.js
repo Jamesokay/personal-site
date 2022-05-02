@@ -10,8 +10,7 @@ const ContactPage = () => {
         <ul className={contactDetails}>
           <li className={contactDetailsItem}>0426 221 594</li>
           <li className={contactDetailsItem}>jamesokeeffe50@gmail.com</li>
-          <li className={contactDetailsItem}>github page</li>
-          <li className={contactDetailsItem}>linkedin page</li>
+          <li className={contactDetailsItem}><a href='https://github.com/Jamesokay' target='_blank'>github</a></li>
         </ul>
       </div>
     </Layout>

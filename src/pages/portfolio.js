@@ -5,13 +5,17 @@ import reactorLogin from '../images/reactorlogin.png'
 import reactorPost from '../images/reactorPost.png'
 import reactorProfile from '../images/reactorProfile.png'
 import reactorUpload from '../images/reactorUpload.png'
-import spotifySS1 from '../images/spotifySS1.png'
+import spotify1 from '../images/spotify1.png'
+import spotify2 from '../images/spotify2.png'
+import spotify3 from '../images/spotify3.png'
+import spotify4 from '../images/spotify4.png'
+import spotify5 from '../images/spotify5.png'
 import Slider from '../components/Slider'
-import { container, projects, projectContainer, reactorContainer, spotifyContainer, projectTitle, spotifyText, projectImage, projectImageContainer, projectDescriptionContainer, projectDescription } from '../styles/portfolio.module.css'
+import { container, projects, projectContainer, projectTitle, projectDescriptionContainer, projectDescription, projectLinks, projectLink, line } from '../styles/portfolio.module.css'
 
 export default function Portfolio() {
 
-  const slideImages = [
+  const reactorImages = [
     {
         desc: 'The Reactor login page',
         url: reactorLogin
@@ -32,6 +36,29 @@ export default function Portfolio() {
       desc: 'The Reactor upload page',
       url: reactorUpload
     }
+]
+
+const spotifyImages = [
+  {
+      desc: 'The Spotify home page',
+      url: spotify1
+  },
+  {
+      desc: 'The Spotify playlist page',
+      url: spotify2
+  },
+  {
+      desc: 'The Spotify Pixies page',
+      url: spotify3
+  },
+  {
+      desc: 'The Spotify search page',
+      url: spotify4
+  },
+  {
+    desc: 'The Spotify Grimes page',
+    url: spotify5
+  }
 ]
     
   // React.useEffect(() => {
@@ -94,32 +121,33 @@ export default function Portfolio() {
         <Layout>           
           <div className={container}>
             <div className={projects}>
-                <div className={`${projectContainer} ${reactorContainer}`}>
-                      {/* <div className={projectImageContainer}>
-                        <img className={projectImage} src={reactorSS1} alt='the reactor feed' />
-                      </div> */}
-                      <Slider slideImages={slideImages} />
+                <div className={projectContainer}>
+                      <Slider slideImages={reactorImages} />
                     <div className={projectDescriptionContainer}>
                       <span className={projectTitle}>Reactor</span>
                       <span className={projectDescription}>
                         A full-stack photo sharing social media app built using MongoDB, Express, React and NodeJS. Routing handled with
                         React Router v6. Requests to API handled with Axios. Images are hosted on Cloudinary, front-end and back-end are both deployed on Heroku.  
-                      </span>     
+                      </span>
+                      <div className={projectLinks}>
+                        <span className={projectLink}>Visit site</span>
+                        <span className={projectLink}>Github repo</span>
+                      </div>     
                     </div>
                 </div>
-                <div className={`${projectContainer} ${spotifyContainer}`}>
-                      <div className={projectImageContainer}>
-                        <img className={projectImage} src={spotifySS1} alt='the spotify homepage' />
-                      </div>
+                <div className={line} />
+                <div className={projectContainer}>
+                  <Slider slideImages={spotifyImages} />
                     <div className={projectDescriptionContainer}>
-                      <span className={`${projectTitle} ${spotifyText}`}>Spotify Clone</span>
-                      <span className={`${projectDescription} ${spotifyText}`}>
+                      <span className={projectTitle}>Spotify Clone</span>
+                      <span className={projectDescription}>
                         An in-depth reproduction of the Spotify web application, built using Express, React and NodeJS in combination with
                         Axios and the Spotify API. Routing handled with React Router v6. Achieves same functionality as the official Spotify site, featuring the Recently Played grid,
                         Recommendations based on user's listening, the search feature, user libraries, user playlist creation, as well as a web player, allowing users to stream music in the browser.
                       </span>     
                     </div>
                 </div>
+                <div className={line} />
                 </div>
           </div>
         </Layout>
