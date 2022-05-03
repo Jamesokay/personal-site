@@ -4,6 +4,7 @@
     justify-content: center;
     flex-direction: column;
     width: 90vw;
+    cursor: default;
 }
 
 .navBar {
@@ -17,12 +18,17 @@
 
 .navOption {
     margin-left: 2rem;
+    cursor: pointer;
 }
 
 .textContainer {
     margin-top: 9rem;
     margin-bottom: 9rem;
     width: 1040px;
+    animation: fadeQuote 2s ease;
+    animation-delay: 0.25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .photoContainer {
@@ -31,16 +37,12 @@
     background: darkcyan;
     align-self: flex-end;
     margin-bottom: 9rem;
+    opacity: 0;
 }
 
 .quote {
     font-family: 'Noto Serif', serif;
     font-size: 4rem;
-    opacity: 0;
-    animation: fadein 2s ease;
-    animation-delay: 0.25s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
 
 .italic {
@@ -49,9 +51,15 @@
     font-style: italic;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+@keyframes fadeQuote {
+    0% { 
+        transform: translateY(20%);
+        opacity: 0; 
+    }
+    100% { 
+        transform: translateY(0%);
+        opacity: 1; 
+    }
 }
 
 @media screen and (max-width: 1160px) {

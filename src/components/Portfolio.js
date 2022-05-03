@@ -10,7 +10,7 @@ import spotify3 from '../images/spotify3.png'
 import spotify4 from '../images/spotify4.png'
 import spotify5 from '../images/spotify5.png'
 import Slider from './Slider'
-import { projects, projectsHeader, projectTitle, projectContainer, projectDescriptionContainer, projectDescription, projectLinks, projectLink, line } from '../styles/portfolio.module.css'
+import { projectsHeader, projectTitle, projectContainer, projectDescriptionContainer, projectDescription, projectLinks, projectLink } from '../styles/portfolio.module.css'
 
 export default function Portfolio() {
 
@@ -60,67 +60,11 @@ const spotifyImages = [
   }
 ]
     
-  // React.useEffect(() => {
-  //   const scrollElements = document.querySelectorAll(".js-scroll");
-  //   var throttleTimer;
-
-  //   const throttle = (callback, time) => {
-  //     if (throttleTimer) return;
-
-  //     throttleTimer = true;
-  //     setTimeout(() => {
-  //       callback();
-  //       throttleTimer = false;
-  //     }, time);
-  //   }
-
-  //   const elementInView = (el, dividend = 1) => {
-  //     const elementTop = el.getBoundingClientRect().top;
-
-  //     return (elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend);
-  //   };
-
-  //   const elementOutofView = (el) => {
-  //     const elementTop = el.getBoundingClientRect().top;
-
-  //     return (elementTop > (window.innerHeight || document.documentElement.clientHeight));
-  //   };
-
-  //   const displayScrollElement = (element) => {
-  //     element.classList.add("scrolled");
-  //   };
-
-  //   const hideScrollElement = (element) => {
-  //     element.classList.remove("scrolled");
-  //   };
-
-  //   const handleScrollAnimation = () => {
-  //     scrollElements.forEach((el) => {
-  //       if (elementInView(el, 1.05)) {
-  //         displayScrollElement(el);
-  //       } else if (elementOutofView(el)) {
-  //         hideScrollElement(el)
-  //       }
-  //     })
-  //   }
-
-  //   window.addEventListener('scroll', () => {
-  //     throttle(handleScrollAnimation, 250);
-  //   })
-
-  //   return function cleanUp() {
-  //     window.removeEventListener('scroll', () => {
-  //       throttle(handleScrollAnimation, 250);
-  //     })
-  //   }
-  // }, [])
-
-
     return (     
-            <div className={projects}>
-                <span className={projectsHeader}>Projects</span>
-                <div className={line} />
-                <div className={projectContainer}>
+            <div className='projects'>
+                <span className={`js-scroll ${projectsHeader}`}>Projects</span>
+                <div className={`js-scroll line`}/>
+                <div className={`js-scroll ${projectContainer}`}>
                       <Slider slideImages={reactorImages} />
                     <div className={projectDescriptionContainer}>
                       <span className={projectTitle}>Reactor</span>
@@ -134,8 +78,8 @@ const spotifyImages = [
                       </div>     
                     </div>
                 </div>
-                <div className={line} />
-                <div className={projectContainer}>
+                <div className={`js-scroll line`} />
+                <div className={`js-scroll ${projectContainer}`}>
                   <Slider slideImages={spotifyImages} />
                     <div className={projectDescriptionContainer}>
                       <span className={projectTitle}>Spotify Clone</span>
@@ -148,7 +92,7 @@ const spotifyImages = [
                       </div>    
                     </div>
                 </div>
-                <div className={line} />
+                <div className={`js-scroll line`}/>
                 </div>
     )
 }

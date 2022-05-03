@@ -1,15 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
 
-.container {
-    display: flex;
-    flex-direction: column;
-}
-
-.projects {
+/* .projects {
     display: flex;
     flex-direction: column;
     width: 100%;
-}
+} */
 
 .projectsHeader {
     font-family: 'Noto Serif', serif;
@@ -18,17 +13,16 @@
     margin-bottom: 2rem;
     display: inline-block;
     color: #36454F;
+    opacity: 0;
 }
 
 .projectContainer {
     display: flex;
     align-items: flex-start;
     border-radius: 0.5rem;
-    animation: fadein 1.5s ease;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
     padding-top: 2rem;
     padding-bottom: 4rem;
+    opacity: 0;
 }
 
 /* .reactorContainer {
@@ -72,14 +66,15 @@
 
 .projectLink {
     margin-right: 1rem;
+    cursor: pointer;
+    color: darkolivegreen;
 }
 
-.line {
-    height: 1px;
-    background: rgb(19, 18, 18);
-    margin-bottom: 2rem;
-    width: 100%;
+.projectLink:hover {
+    text-decoration: underline;
 }
+
+
 
 @media screen and (max-width: 1120px) {
     .projectContainer {
@@ -149,14 +144,4 @@
         text-align: center;
     }
 } */
-
-@keyframes fadein {
-    0% { 
-        opacity: 0; 
-    }
-    100% { 
-        opacity: 1; 
-    }
-}
-
 

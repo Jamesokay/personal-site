@@ -1,45 +1,18 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 9rem;
-}
-
 .greeting {
     font-family: 'Noto Serif', serif;
     font-size: 9rem;
     font-weight: 700;
     margin-bottom: 2rem;
-    opacity: 0;
-    animation: fadein 1.5s ease;
-    animation-delay: 0.25s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
 
 .contact-details {
     list-style: none;
     font-size: 1.5rem;
     text-align: center;
-    opacity: 0;
-    animation: fadein 1.5s ease;
-    animation-delay: 0.75s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
 
 .contact-details-item {
     margin-bottom: 1.5rem;
-}
-
-@keyframes fadein {
-    0% { 
-        opacity: 0; 
-    }
-    100% { 
-        opacity: 1;
-    }
 }
 
 @media screen and (max-width: 700px) {
