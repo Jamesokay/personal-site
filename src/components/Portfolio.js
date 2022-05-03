@@ -64,35 +64,34 @@ const spotifyImages = [
             <div className='projects'>
                 <span className={`js-scroll ${projectsHeader}`}>Projects</span>
                 <div className={`js-scroll line`}/>
-                <div className={`js-scroll ${projectContainer}`}>
+                <div className={projectContainer}>
                       <Slider slideImages={reactorImages} />
                     <div className={projectDescriptionContainer}>
-                      <span className={projectTitle}>Reactor</span>
-                      <span className={projectDescription}>
+                      <span className={`js-scroll ${projectTitle}`}>Reactor</span>
+                      <span className={`js-scroll ${projectDescription}`}>
                         A full-stack photo sharing social media app built using MongoDB, Express, React and NodeJS. Routing handled with
                         React Router v6. Requests to API handled with Axios. Images are hosted on Cloudinary, front-end and back-end are both deployed on Heroku.  
                       </span>
-                      <div className={projectLinks}>
-                        <span className={projectLink}>Visit site</span>
-                        <span className={projectLink}>Github repo</span>
+                      <div className={`js-scroll ${projectLinks}`}>
+                        <div className={projectLink}>Site</div>
+                        <div className={projectLink}>Github</div>
                       </div>     
                     </div>
                 </div>
                 <div className={`js-scroll line`} />
-                <div className={`js-scroll ${projectContainer}`}>
+                <div className={projectContainer}>
                   <Slider slideImages={spotifyImages} />
                     <div className={projectDescriptionContainer}>
-                      <span className={projectTitle}>Spotify Clone</span>
-                      <span className={projectDescription}>
+                      <span className={`js-scroll ${projectTitle}`}>Spotify Clone</span>
+                      <span className={`js-scroll ${projectDescription}`}>
                         An in-depth reproduction of the Spotify web application, built using Express, React and NodeJS in combination with
                         Axios and the Spotify API. Routing handled with React Router v6.
                       </span>   
-                      <div className={projectLinks}>
-                        <span className={projectLink}>Github repo</span>
+                      <div className={`js-scroll ${projectLinks}`}>
+                        <div className={projectLink}>Github</div>
                       </div>    
                     </div>
                 </div>
-                <div className={`js-scroll line`}/>
                 </div>
     )
 }

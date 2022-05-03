@@ -3,12 +3,13 @@ import Layout from '../components/Layout'
 import Portfolio from '../components/Portfolio'
 import Contact from '../components/Contact'
 import { container, navBar, navOption, textContainer, photoContainer, quote } from '../styles/home.module.css'
+import scrollTo from 'gatsby-plugin-smoothscroll'
 
 const IndexPage = () => {
 
-    function scrollTo(pageLocation) {
-      pageLocation.scrollIntoView({ behavior: "smooth" });
-    }
+    // function scrollTo(pageLocation) {
+    //   pageLocation.scrollIntoView({ behavior: "smooth" });
+    // }
 
     React.useEffect(() => {
       const scrollElements = document.querySelectorAll('.js-scroll');
@@ -44,7 +45,7 @@ const IndexPage = () => {
 
       const handleScrollAnimation = () => {
         scrollElements.forEach((el) => {
-          if (elementInView(el, 1.3)) {
+          if (elementInView(el, 1.1)) {
             displayScrollElement(el)
           } else if (elementOutofView(el)) {
             hideScrollElement(el)
@@ -68,8 +69,8 @@ const IndexPage = () => {
         <div className={navBar}>
           <span>James O'Keeffe</span>
           <div>
-            <span className={navOption} onClick={() => scrollTo(document.querySelector('.projects'))}>Portfolio</span>
-            <span className={navOption} onClick={() => scrollTo(document.querySelector('.contactSection'))}>Contact</span>
+            <span className={navOption} onClick={() => scrollTo('.projects')}>Portfolio</span>
+            <span className={navOption} onClick={() => scrollTo('.contactSection')}>Contact</span>
           </div>
         </div>
         <div className={textContainer}>
@@ -80,8 +81,8 @@ const IndexPage = () => {
         </div>
         <div className={`js-scroll ${photoContainer}`} />
         <Portfolio />
-        <Contact />
-      </div>
+        </div>
+        <Contact />    
     </Layout>
   )
 }

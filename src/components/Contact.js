@@ -1,15 +1,18 @@
 import * as React from "react"
-import { greeting, contactDetails, contactDetailsItem } from '../styles/contact.module.css'
+import { greeting, contactDetails, contactDetailsItem, contactDetailsLink, footer } from '../styles/contact.module.css'
 
 export default function Contact() {
   return (
-      <div className='js-scroll contactSection'>
-        <h1 className={greeting}>Hello</h1>
-        <ul className={contactDetails}>
+      <div className='contactSection'>
+        <h1 className={`js-scroll ${greeting}`}>Hello</h1>
+        <ul className={`js-scroll ${contactDetails}`}>
           <li className={contactDetailsItem}>0426 221 594</li>
           <li className={contactDetailsItem}>jamesokeeffe50@gmail.com</li>
-          <li className={contactDetailsItem}><a href='https://github.com/Jamesokay' target='_blank'>github</a></li>
+          <li className={contactDetailsItem}><a className={contactDetailsLink} href='https://github.com/Jamesokay' target='_blank'>github</a></li>
         </ul>
+        <div className={footer}>
+          © James O'Keeffe
+        </div>
       </div>
   )
 }

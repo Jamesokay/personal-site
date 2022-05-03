@@ -2,17 +2,35 @@
     font-family: 'Noto Serif', serif;
     font-size: 9rem;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    opacity: 0;
+    color: rgb(255, 254, 233);
 }
 
 .contact-details {
     list-style: none;
     font-size: 1.5rem;
     text-align: center;
+    opacity: 0;
+    margin-bottom: 4rem;
 }
 
 .contact-details-item {
+    color: rgb(255, 254, 233);
     margin-bottom: 1.5rem;
+}
+
+.contact-details-link {
+    color: rgb(255, 254, 233);  
+}
+
+.footer {
+    border-top: 1px solid rgb(255, 254, 233);
+    color: rgb(255, 254, 233);
+    width: 90vw;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    justify-self: flex-end;
 }
 
 @media screen and (max-width: 700px) {

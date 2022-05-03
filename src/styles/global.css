@@ -21,7 +21,8 @@ html, body {
 .page {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 } 
 
 nav {
@@ -88,13 +89,14 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 9rem;
-    opacity: 0;
+    padding-top: 4rem;
+    background: #36454F;
+    width: 100vw;
 }
 
 @keyframes fadein {
     0% { 
-        transform: translateY(10%);
+        transform: translateY(40%);
         opacity: 0; 
     }
     100% { 
