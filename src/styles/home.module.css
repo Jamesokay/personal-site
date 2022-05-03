@@ -1,20 +1,41 @@
 .container {
     box-sizing: border-box;
-    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+    width: 90vw;
+}
+
+.navBar {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.navOption {
+    margin-left: 2rem;
 }
 
 .textContainer {
-    width: 50%;
-    text-align: center;
+    margin-top: 9rem;
+    margin-bottom: 9rem;
+    width: 1040px;
+}
+
+.photoContainer {
+    width: 650px;
+    height: 450px;
+    background: darkcyan;
+    align-self: flex-end;
+    margin-bottom: 9rem;
 }
 
 .quote {
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-size: 2.5rem;
+    font-family: 'Noto Serif', serif;
+    font-size: 4rem;
     opacity: 0;
     animation: fadein 2s ease;
     animation-delay: 0.25s;
@@ -33,8 +54,42 @@
     to   { opacity: 1; }
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1160px) {
     .textContainer {
-        width: 90%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .textContainer {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .quote {
+        font-size: 3rem;
+    }
+    .photoContainer {
+        align-self: flex-start;
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .container {
+        width: 95vw;
+    }
+
+}
+
+@media screen and (max-width: 685px) {
+    .photoContainer {
+        width: 95vw;
+        height: 65.5vw;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .quote {
+        font-size: 2rem;
     }
 }

@@ -1,16 +1,13 @@
 .container {
-    box-sizing: border-box;
-    height: 100vh;
-    width: 100%;
-    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 9rem;
 }
 
 .greeting {
-    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Noto Serif', serif;
     font-size: 9rem;
     font-weight: 700;
     margin-bottom: 2rem;
@@ -42,5 +39,27 @@
     }
     100% { 
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .greeting {
+        font-size: 6rem;
+    }
+    .contact-details {
+        font-size: 1.25rem;
+    }
+    .contact-details-item {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .greeting {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+    .contact-details {
+        font-size: 1rem;
     }
 }

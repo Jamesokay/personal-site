@@ -1,5 +1,4 @@
 import React from 'react'
-import Layout from '../components/Layout'
 import reactorFeed from '../images/reactorFeed.png'
 import reactorLogin from '../images/reactorlogin.png'
 import reactorPost from '../images/reactorPost.png'
@@ -10,8 +9,8 @@ import spotify2 from '../images/spotify2.png'
 import spotify3 from '../images/spotify3.png'
 import spotify4 from '../images/spotify4.png'
 import spotify5 from '../images/spotify5.png'
-import Slider from '../components/Slider'
-import { container, projects, projectContainer, projectTitle, projectDescriptionContainer, projectDescription, projectLinks, projectLink, line } from '../styles/portfolio.module.css'
+import Slider from './Slider'
+import { projects, projectsHeader, projectTitle, projectContainer, projectDescriptionContainer, projectDescription, projectLinks, projectLink, line } from '../styles/portfolio.module.css'
 
 export default function Portfolio() {
 
@@ -117,10 +116,10 @@ const spotifyImages = [
   // }, [])
 
 
-    return (
-        <Layout>           
-          <div className={container}>
+    return (     
             <div className={projects}>
+                <span className={projectsHeader}>Projects</span>
+                <div className={line} />
                 <div className={projectContainer}>
                       <Slider slideImages={reactorImages} />
                     <div className={projectDescriptionContainer}>
@@ -142,14 +141,14 @@ const spotifyImages = [
                       <span className={projectTitle}>Spotify Clone</span>
                       <span className={projectDescription}>
                         An in-depth reproduction of the Spotify web application, built using Express, React and NodeJS in combination with
-                        Axios and the Spotify API. Routing handled with React Router v6. Achieves same functionality as the official Spotify site, featuring the Recently Played grid,
-                        Recommendations based on user's listening, the search feature, user libraries, user playlist creation, as well as a web player, allowing users to stream music in the browser.
-                      </span>     
+                        Axios and the Spotify API. Routing handled with React Router v6.
+                      </span>   
+                      <div className={projectLinks}>
+                        <span className={projectLink}>Github repo</span>
+                      </div>    
                     </div>
                 </div>
                 <div className={line} />
                 </div>
-          </div>
-        </Layout>
     )
 }

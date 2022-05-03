@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,700;1,400&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-    color: rgb(41, 41, 41);
+    color: #36454F;
 }
 
 html, body {
@@ -15,23 +15,22 @@ html, body {
     overscroll-behavior: none;
     margin: 0;
     padding: 0;
-    background: rgb(224, 224, 224);
+    background: rgb(255, 254, 233);
 }
 
 .page {
-    height: 100%;
     width: 100%;
-    z-index: 1;
+    display: flex;
+    justify-content: center;
 } 
 
 nav {
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    width: 70px;
     align-items: center;
     position: fixed;
-    height: 100vh;
+    height: 90vh;
     z-index: 2;
 }
 
@@ -48,7 +47,7 @@ nav a {
 }
 
 nav a:hover {
-    color: black;
+    color: black
 }
 
 .active {
