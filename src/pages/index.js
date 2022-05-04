@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import Portfolio from '../components/Portfolio'
 import Contact from '../components/Contact'
-import { container, navBar, navOption, textContainer, photoContainer, quote } from '../styles/home.module.css'
+import { container, navBar, navOption, containerMid, containerMidLeft, containerSmall, containerSmallTextBox, containerSmallText, containerSmallTextLarge, textContainer, photoContainer, quote } from '../styles/home.module.css'
 import scrollTo from 'gatsby-plugin-smoothscroll'
 
 const IndexPage = () => {
@@ -64,7 +64,26 @@ const IndexPage = () => {
             that are both functional and elegant
           </span>
         </div>
-        <div className={`js-scroll ${photoContainer}`} />
+        <div className={containerMid}>
+         <div className={containerMidLeft}> 
+          <div className={containerSmall}>
+            <div className='js-scroll line' />
+            <div className={`js-scroll ${containerSmallTextBox}`}>
+              <span className={containerSmallText}>Github</span>
+              <span className={containerSmallTextLarge}>github.com/Jamesokay</span>
+            </div>
+          </div>
+          <div className={containerSmall}>
+            <div className='js-scroll line' />
+            <div className={`js-scroll ${containerSmallTextBox}`}>
+              <span className={containerSmallText}>Location</span>
+              <span className={containerSmallTextLarge}>Perth, WA</span>
+            </div>
+          </div>
+         </div>
+
+          <div className={`js-scroll ${photoContainer}`} />
+        </div>
         <Portfolio />
         </div>
         <Contact />    

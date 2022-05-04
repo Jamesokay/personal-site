@@ -36,8 +36,7 @@
     width: 650px;
     height: 450px;
     background: darkcyan;
-    align-self: flex-end;
-    margin-bottom: 9rem;
+    margin-left: 2rem;
     opacity: 0;
 }
 
@@ -50,6 +49,40 @@
     font-family: Noto Serif;
     font-weight: 400;
     font-style: italic;
+}
+
+.containerMid {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 9rem;
+}
+
+.containerMidLeft {
+    display: flex;
+}
+
+.containerSmall {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-left: 1.5rem;
+}
+
+.containerSmallTextBox {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerSmallText {
+    color: grey;
+    margin-bottom: 0.5rem;
+}
+
+.containerSmallTextLarge {
+    font-size: 1.2rem;
 }
 
 @media screen and (max-width: 1160px) {
@@ -66,9 +99,13 @@
     .quote {
         font-size: 3rem;
     }
-    .photoContainer {
-        align-self: flex-start;
+    .containerMid {
+        flex-direction: column-reverse;
+        align-items: flex-end;
         margin-bottom: 4rem;
+    }
+    .photoContainer {
+        margin-bottom: 2rem;
     }
 }
 
