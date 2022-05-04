@@ -45,14 +45,13 @@
     line-height: 1.75rem;
     font-size: 1.2rem;
     color: grey;
+    margin-bottom: 1rem;
     opacity: 0;
 }
 
 .projectLinks {
     display: flex;
-    margin-top: 1rem;
     opacity: 0;
-    height: 4rem
 }
 
 .projectLink {
@@ -65,6 +64,12 @@
     padding-right: 1rem;
     cursor: pointer;
     border: 2px solid #36454F;
+    transition: color border 0.2s ease-in-out;
+}
+
+.projectLink:hover {
+    border: 2px solid #6a7f8b;
+    color: #6a7f8b;
 }
 
 

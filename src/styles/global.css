@@ -92,15 +92,16 @@ nav a:hover {
     padding-top: 4rem;
     background: #36454F;
     width: 100vw;
+    cursor: default;
 }
 
 @keyframes fadein {
     0% { 
-        transform: translateY(40%);
+        transform: translateY(50px);
         opacity: 0; 
     }
     100% { 
-        transform: translateY(0%);
+        transform: translateY(0px);
         opacity: 1; 
     }
 }
