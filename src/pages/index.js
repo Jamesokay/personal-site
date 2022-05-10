@@ -69,15 +69,15 @@ const IndexPage = () => {
           <div className={containerSmall}>
             <div className='js-scroll line' />
             <div className={`js-scroll ${containerSmallTextBox}`}>
-              <span className={containerSmallText}>Github</span>
-              <span className={containerSmallTextLarge}>github.com/Jamesokay</span>
+              <span className={containerSmallText}>Location</span>
+              <span className={containerSmallTextLarge}>Perth, WA</span>
             </div>
           </div>
           <div className={containerSmall}>
             <div className='js-scroll line' />
             <div className={`js-scroll ${containerSmallTextBox}`}>
-              <span className={containerSmallText}>Location</span>
-              <span className={containerSmallTextLarge}>Perth, WA</span>
+              <span className={containerSmallText}>Github</span>
+              <span className={containerSmallTextLarge}>Jamesokay</span>
             </div>
           </div>
          </div>

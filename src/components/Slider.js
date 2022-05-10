@@ -1,24 +1,45 @@
 import SlideContent from './SlideContent'
 import React from 'react'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { sliderContainer, sliderImageContainer, dotsContainer, dot, activeDot } from '../styles/slider.module.css'
 
 
 
 export default function Slider({ slideImages }) {
     const [activeIndex, setActiveIndex] = useState(0)
+    const ref = useRef()
     const len = slideImages.length - 1
+    const [inView, setInView] = useState(false)
     
+    // Maybe extract this, could then be used for checking whether to load photo immediately or not
     useEffect(() => {
-        
+      const slider= ref.current
+      const observer = new IntersectionObserver(
+          ([entry]) => {
+            if (entry.isIntersecting) {
+              setInView(true)
+            } else {
+              setInView(false)
+            }
+          }, { rootMargin: '-200px' }
+      );
+
+      slider && observer.observe(slider);
+
+      return () => observer.unobserve(slider);
+  }, []);
+    
+    useEffect(() => {     
+      if (!inView) return
+      
         const interval = setInterval(() => {
             setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
         }, 5000)
         return () => clearInterval(interval)
-    }, [activeIndex, len])
+    }, [activeIndex, len, inView])
 
     return (
-        <div className={sliderContainer}>
+        <div className={sliderContainer} ref={ref}>
         <div className={sliderImageContainer}>
           <SlideContent activeIndex={activeIndex} slideImages={slideImages} />
         </div>
