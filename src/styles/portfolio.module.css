@@ -49,6 +49,12 @@
     opacity: 0;
 }
 
+.italic {
+    color: grey;
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+}
+
 .projectLinks {
     display: flex;
     opacity: 0;

@@ -10,7 +10,7 @@ import spotify3 from '../images/spotify3.png'
 import spotify4 from '../images/spotify4.png'
 import spotify5 from '../images/spotify5.png'
 import Slider from './Slider'
-import { projectsHeader, projectTitle, projectContainer, projectDescriptionContainer, projectDescription, projectLinks, projectLink } from '../styles/portfolio.module.css'
+import { projectsHeader, projectTitle, projectContainer, projectDescriptionContainer, projectDescription, italic, projectLinks, projectLink } from '../styles/portfolio.module.css'
 
 export default function Portfolio() {
 
@@ -69,8 +69,12 @@ const spotifyImages = [
                     <div className={projectDescriptionContainer}>
                       <span className={`js-scroll ${projectTitle}`}>Reactor</span>
                       <span className={`js-scroll ${projectDescription}`}>
-                        A full-stack photo sharing social media app built using MongoDB, Express, React and NodeJS. Routing handled with
-                        React Router v6. Requests to API handled with Axios. Images are hosted on Cloudinary, front-end and back-end are both deployed on Heroku.  
+                        A <span className={italic}>MERN</span> stack social media app allowing users to upload, share, like and comment on photos. 
+                        Back-end API built using <span className={italic}>Express, Node, MongoDB</span> and <span className={italic}>Mongoose</span>. 
+                        Requests to API are handled with <span className={italic}>Axios</span>, 
+                        and routing is handled with <span className={italic}>React Router v6</span>. 
+                        Front-end built with <span className={italic}>React</span> and <span className={italic}>Material UI</span>.
+                        Images are hosted and optimized for performance using <span className={italic}>Cloudinary SaaS</span>. 
                       </span>
                       <div className={`js-scroll ${projectLinks}`}>
                         <div className={projectLink}>Site</div>
@@ -84,8 +88,10 @@ const spotifyImages = [
                     <div className={projectDescriptionContainer}>
                       <span className={`js-scroll ${projectTitle}`}>Spotify Clone</span>
                       <span className={`js-scroll ${projectDescription}`}>
-                        An in-depth reproduction of the Spotify web application, built using Express, React and NodeJS in combination with
-                        Axios and the Spotify API. Routing handled with React Router v6.
+                        An in-depth reproduction of the Spotify web application for desktop, 
+                        built using <span className={italic}>Express, React, Node</span> and 
+                        <span className={italic}>Axios</span> in combination with the <span className={italic}>Spotify API</span>. 
+                        Routing handled with <span className={italic}>React Router v6</span>.
                       </span>   
                       <div className={`js-scroll ${projectLinks}`}>
                         <div className={projectLink}>Github</div>
