@@ -89,8 +89,8 @@ const spotifyImages = [
                       <span className={`js-scroll ${projectTitle}`}>Spotify Clone</span>
                       <span className={`js-scroll ${projectDescription}`}>
                         An in-depth reproduction of the Spotify web application for desktop, 
-                        built using <span className={italic}>Express, React, Node</span> and 
-                        <span className={italic}>Axios</span> in combination with the <span className={italic}>Spotify API</span>. 
+                        built using <span className={italic}>Express, React, Node</span> and  
+                        <span className={italic}> Axios</span> in combination with the <span className={italic}>Spotify API</span>. 
                         Routing handled with <span className={italic}>React Router v6</span>.
                       </span>   
                       <div className={`js-scroll ${projectLinks}`}>

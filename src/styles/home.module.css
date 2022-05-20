@@ -33,7 +33,8 @@
 }
 
 .photoContainer {
-    width: 45.1vw;
+    object-fit: cover;
+    width: 42vw;
     height: 35.4vw;
     opacity: 0;
 }
@@ -77,6 +78,7 @@
 .containerSmallText {
     color: grey;
     margin-bottom: 0.5rem;
+    margin-top: 1rem;
 }
 
 .containerSmallTextLarge {
@@ -102,6 +104,10 @@
 @media screen and (max-width: 950px) {
     .container {
         width: 95vw;
+    }
+    .photoContainer {
+        width: 47vw;
+        height: 39.6vw;
     }
 }
 

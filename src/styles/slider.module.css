@@ -89,12 +89,12 @@
     }
     .sliderImageContainer {
       width: 80vw;
-      height: 40vw;
+      height: 41vw;
     }
 
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 950px) {
     .sliderImageContainer {
       width: 95vw;
       height: 48.25vw;
