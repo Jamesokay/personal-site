@@ -1,5 +1,4 @@
 import React from 'react'
-import Layout from '../components/Layout'
 import Portfolio from '../components/Portfolio'
 import Contact from '../components/Contact'
 import myHead from '../images/myHead.png'
@@ -50,7 +49,7 @@ const IndexPage = () => {
   }, [])
 
   return (
-    <Layout>
+    <div className='page'>
       <div className={container}>
         <div className={navBar}>
           <span>James O'Keeffe</span>
@@ -77,7 +76,7 @@ const IndexPage = () => {
           <div className={containerSmall}>
             <div className='js-scroll line' />
             <div className={`js-scroll ${containerSmallTextBox}`}>
-              <span className={containerSmallText}>Github</span>
+              <span className={containerSmallText}>GitHub</span>
               <span className={containerSmallTextLarge}>Jamesokay</span>
             </div>
           </div>
@@ -88,7 +87,7 @@ const IndexPage = () => {
         <Portfolio />
         </div>
         <Contact />    
-    </Layout>
+    </div>
   )
 }
 
