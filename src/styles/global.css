@@ -96,7 +96,7 @@ nav a:hover {
 
 @keyframes fadein {
     0% { 
-        transform: translateY(50px);
+        transform: translateY(30px);
         opacity: 0; 
     }
     100% { 

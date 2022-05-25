@@ -117,6 +117,7 @@
 @media screen and (max-width: 450px) {
     .projectsHeader {
         font-size: 2rem;
+        margin-bottom: 3rem;
     }
     .projectTitle {
         font-size: 1.75rem;
