@@ -77,8 +77,8 @@ const spotifyImages = [
                         Images are hosted and optimized for performance using <span className={italic}>Cloudinary SaaS</span>. 
                       </span>
                       <div className={`js-scroll ${projectLinks}`}>
-                        <div className={projectLink}>Site</div>
-                        <div className={projectLink}>Github</div>
+                        <a className={projectLink} href='https://reactorsocialmedia.herokuapp.com/' target='_blank'>Site</a>
+                        <a className={projectLink} href='https://github.com/Jamesokay/reactor' target='_blank'>Github</a>
                       </div>     
                     </div>
                 </div>
@@ -94,7 +94,7 @@ const spotifyImages = [
                         Routing handled with <span className={italic}>React Router v6</span>.
                       </span>   
                       <div className={`js-scroll ${projectLinks}`}>
-                        <div className={projectLink}>Github</div>
+                        <a className={projectLink} href='https://github.com/Jamesokay/spotifyclone' target='_blank'>Github</a>
                       </div>    
                     </div>
                 </div>

@@ -21,7 +21,12 @@
 }
 
 .contact-details-link {
-    color: rgb(255, 254, 233);  
+    color: rgb(255, 254, 233);
+    transition: color 0.2s ease-in-out;
+}
+
+.contact-details-link:hover {
+    color: #7394a8;
 }
 
 .footer {

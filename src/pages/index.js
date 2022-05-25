@@ -1,4 +1,5 @@
 import React from 'react'
+import Layout from '../components/Layout'
 import Portfolio from '../components/Portfolio'
 import Contact from '../components/Contact'
 import myHead from '../images/myHead.png'
@@ -49,6 +50,7 @@ const IndexPage = () => {
   }, [])
 
   return (
+    <Layout>
     <div className='page'>
       <div className={container}>
         <div className={navBar}>
@@ -88,6 +90,7 @@ const IndexPage = () => {
         </div>
         <Contact />    
     </div>
+    </Layout>
   )
 }
 
