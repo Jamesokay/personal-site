@@ -34,14 +34,13 @@
 
 .photoContainer {
     object-fit: cover;
-    width: 42vw;
-    height: 35.4vw;
     opacity: 0;
 }
 
 .quote {
     font-family: 'Noto Serif', serif;
     font-size: 4rem;
+    align-self: flex-start;
 }
 
 .italic {
@@ -105,29 +104,27 @@
     .container {
         width: 95vw;
     }
-    .photoContainer {
-        width: 47vw;
-        height: 39.6vw;
-    }
 }
 
 @media screen and (max-width: 775px) {
+    .container {
+        align-items: center;
+    }
     .containerMid {
         flex-direction: column-reverse;
-        align-items: flex-end;
+        align-items: center;
         margin-bottom: 4rem;
+        width: fit-content;
     }
     .photoContainer {
-        height: 74.65vw;
-        width: 95vw;
         margin-bottom: 2rem;
     }
     .containerMidLeft {
-        width: 95vw;
+        width: 100%;
         justify-content: space-between;
     }
     .containerSmall {
-        width: 47.5%;
+        width: 42.5%;
         margin-right: 0;
     }
 }

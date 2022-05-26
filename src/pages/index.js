@@ -1,8 +1,8 @@
 import React from 'react'
+import { StaticImage } from "gatsby-plugin-image"
 import Layout from '../components/Layout'
 import Portfolio from '../components/Portfolio'
 import Contact from '../components/Contact'
-import myHead from '../images/myHead.png'
 import { container, navBar, navOption, containerMid, containerMidLeft, containerSmall, containerSmallTextBox, containerSmallText, containerSmallTextLarge, textContainer, photoContainer, quote } from '../styles/home.module.css'
 import scrollTo from 'gatsby-plugin-smoothscroll'
 
@@ -84,7 +84,12 @@ const IndexPage = () => {
           </div>
          </div>
 
-          <img src={myHead} className={`js-scroll ${photoContainer}`} alt='' />
+          <StaticImage 
+            src='../images/myHead.png' 
+            className={`js-scroll ${photoContainer}`} 
+            alt=''
+            width={605}
+            height={515} />
         </div>
         <Portfolio />
         </div>

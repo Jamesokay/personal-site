@@ -5,11 +5,12 @@ import { sliderContainer, sliderImageContainer, dotsContainer, dot, activeDot } 
 
 
 
-export default function Slider({ slideImages }) {
+export default function Slider({ content }) {
     const [activeIndex, setActiveIndex] = useState(0)
     const ref = useRef()
-    const len = slideImages.length - 1
     const [inView, setInView] = useState(false)
+    const slideImages = [0, 1, 2, 3, 4]
+    const len = slideImages.length - 1
     
     // Maybe extract this, could then be used for checking whether to load photo immediately or not
     useEffect(() => {
@@ -41,7 +42,7 @@ export default function Slider({ slideImages }) {
     return (
         <div className={sliderContainer} ref={ref}>
         <div className={sliderImageContainer}>
-          <SlideContent activeIndex={activeIndex} slideImages={slideImages} />
+          <SlideContent activeIndex={activeIndex} content={content} />
         </div>
           <div className={dotsContainer}>
           {slideImages.map((slide, index) => (
