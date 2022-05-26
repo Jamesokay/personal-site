@@ -1,4 +1,5 @@
-import SlideContent from './SlideContent'
+import ReactorContent from './ReactorContent'
+import SpotifyContent from './SpotifyContent'
 import React from 'react'
 import { useState, useEffect, useRef } from 'react'
 import { sliderContainer, sliderImageContainer, dotsContainer, dot, activeDot } from '../styles/slider.module.css'
@@ -12,7 +13,6 @@ export default function Slider({ content }) {
     const slideImages = [0, 1, 2, 3, 4]
     const len = slideImages.length - 1
     
-    // Maybe extract this, could then be used for checking whether to load photo immediately or not
     useEffect(() => {
       const slider= ref.current
       const observer = new IntersectionObserver(
@@ -39,10 +39,10 @@ export default function Slider({ content }) {
         return () => clearInterval(interval)
     }, [activeIndex, len, inView])
 
-    return (
+    return content === 'reactor' ? (
         <div className={sliderContainer} ref={ref}>
         <div className={sliderImageContainer}>
-          <SlideContent activeIndex={activeIndex} content={content} />
+          <ReactorContent activeIndex={activeIndex} content={content} />
         </div>
           <div className={dotsContainer}>
           {slideImages.map((slide, index) => (
@@ -55,5 +55,23 @@ export default function Slider({ content }) {
            ))}           
           </div>
         </div>
+    )
+    :
+    (
+      <div className={sliderContainer} ref={ref}>
+      <div className={sliderImageContainer}>
+        <SpotifyContent activeIndex={activeIndex} content={content} />
+      </div>
+        <div className={dotsContainer}>
+        {slideImages.map((slide, index) => (
+            <span 
+              key={index}
+              className={activeIndex === index ? `${dot} ${activeDot}` : dot}
+              onClick={() => setActiveIndex(index)}
+              onKeyDown={() => setActiveIndex(index)}
+            />
+         ))}           
+        </div>
+      </div>
     )
 }
