@@ -4,7 +4,7 @@
 .projectsHeader {
     font-size: 4.5rem;
     margin-top: 2rem;
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
     display: inline-block;
     color: #36454F;
     opacity: 0;
@@ -92,7 +92,6 @@
     }
     .projectsHeader {
         font-size: 3.5rem;
-        margin-bottom: 5rem;
     }
     .projectTitle {
         font-size: 2.5rem;
