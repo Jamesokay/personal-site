@@ -1,6 +1,6 @@
 import React from 'react'
 import reactorFeed from '../images/reactorFeed.png'
-import reactorLogin from '../images/reactorlogin.png'
+import reactorLogin from '../images/reactorLogin.png'
 import reactorPost from '../images/reactorPost.png'
 import reactorProfile from '../images/reactorProfile.png'
 import reactorUpload from '../images/reactorUpload.png'
