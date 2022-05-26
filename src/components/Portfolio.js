@@ -77,7 +77,6 @@ const spotifyImages = [
                         Images are hosted and optimized for performance using <span className={italic}>Cloudinary SaaS</span>. 
                       </span>
                       <div className={`js-scroll ${projectLinks}`}>
-                        <a className={projectLink} href='https://reactorsocialmedia.herokuapp.com/' target='_blank'>Site</a>
                         <a className={projectLink} href='https://github.com/Jamesokay/reactor' target='_blank'>Github</a>
                       </div>     
                     </div>
