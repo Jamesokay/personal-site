@@ -1,5 +1,5 @@
 import React from 'react'
-import { activeSlide, inactiveSlide, slideImage } from '../styles/slider.module.css'
+import { activeSlide, inactiveSlide } from '../styles/slider.module.css'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import { StaticQuery, graphql } from "gatsby"
 
@@ -27,8 +27,7 @@ export default function SlideContent({ activeIndex }) {
             data.reactorImages.edges.map(({node}, index) => (
               <div key={node.id} className={index === activeIndex ? activeSlide : inactiveSlide}>
                 <GatsbyImage 
-                  image={node.childImageSharp.gatsbyImageData}
-                  className={slideImage} 
+                  image={node.childImageSharp.gatsbyImageData} 
                   alt='Spotify images' 
                 />
               </div>

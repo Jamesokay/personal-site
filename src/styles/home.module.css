@@ -39,6 +39,7 @@
 
 .quote {
     font-family: 'Noto Serif', serif;
+    font-weight: 700;
     font-size: 4rem;
     align-self: flex-start;
 }
