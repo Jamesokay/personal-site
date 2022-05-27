@@ -14,17 +14,12 @@
   
   .inactiveSlide {
     opacity: 0;
-    height: 100%;
-    width: 100%;
     position: absolute;
     transition: opacity 1s ease-in-out;
   }
   
   .activeSlide {
-    height: 100%;
-    width: 100%;
     position: absolute;
-    display: inline-block;
     opacity: 1;
     transition: opacity 1s ease-in-out;
   }

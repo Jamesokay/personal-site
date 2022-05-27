@@ -10,25 +10,28 @@ export default function SlideContent({ activeIndex }) {
         <StaticQuery
           query ={ graphql `
             query {
-            reactorImages: allFile(filter: {relativeDirectory: {eq: "spotify"}, extension: {eq: "png"}}) {
-              edges {
-                node {
-                  id
-                  base
-                  childImageSharp {
-                    gatsbyImageData(width: 865, height: 445, quality: 70)
+              spotifyImages:   allFile(
+                filter: {relativeDirectory: {eq: "spotify"}, extension: {eq: "png"}}
+                sort: {fields: relativePath, order: ASC}
+              ) {
+                edges {
+                  node {
+                    id
+                    base
+                    childImageSharp {
+                      gatsbyImageData(width: 865, height: 445, quality: 70)
+                   }
                   }
                 }
               }
-             }
             }
           `}
           render={data => (
-            data.reactorImages.edges.map(({node}, index) => (
+            data.spotifyImages.edges.map(({node}, index) => (
               <div key={node.id} className={index === activeIndex ? activeSlide : inactiveSlide}>
                 <GatsbyImage 
-                  image={node.childImageSharp.gatsbyImageData} 
-                  alt='Spotify images' 
+                  image={node.childImageSharp.gatsbyImageData}
+                  alt='Spotify images'
                 />
               </div>
             ))  

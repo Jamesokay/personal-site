@@ -12,7 +12,10 @@ export default function ReactorContent({ activeIndex }) {
         <StaticQuery
           query ={ graphql `
             query {
-            reactorImages: allFile(filter: {relativeDirectory: {eq: "reactor"}, extension: {eq: "png"}}) {
+            reactorImages: allFile(
+              filter: {relativeDirectory: {eq: "reactor"}, extension: {eq: "png"}}
+              sort: {fields: relativePath, order: ASC}
+              ) {
               edges {
                 node {
                   id
